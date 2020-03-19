@@ -135,6 +135,8 @@ img.thumb {
     background-size: cover; 
     background-position: center;
     transition: 0.3s;
+    
+    display: none;
 }
 
 .infobox {
@@ -147,4 +149,6 @@ img.thumb {
     margin: 3% 15%;
     border-radius: 40px;
     transition: 0.2s;
+    
+    display: none;
 }
