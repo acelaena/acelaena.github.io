@@ -102,6 +102,7 @@ body, html{
     float: right;
     margin: 1%;
     letter-spacing: 3px;
+    font-family: inherit;
 }
     
 }
