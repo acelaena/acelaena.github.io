@@ -3,24 +3,97 @@
 <head>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
+
+
 <title>Commission Information - Acelaena</title>
 </head>
 
 <body>
 <div id="background">
-</div>
-<div class="infobox">
-
-<div class="infocontent" id="sketch">
-<img src="images/sketches/Dragon_and_Phoenix.PNG">
-Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again. And if she hasn’t been rewritten, then they are still using her.Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline
-</div>
+    <div class="infobox">
+    <span class="close" onclick="closePopup()">&times;</span>
+        
+        <div class="infocontent" id="sketch">
+            <img src="images/sketch.PNG">
+            <h1>Sketch</h1>
+            <h2>
+                Partial body / Simple creatures: $5 <br>
+                Full body / Complex creatures: $10 <br>
+            </h2>
+                >> Additional characters +80% price  <br>
+                >> Highly detailed designs may be subject to an additional fee, or simplified on request. <br>
+                >> Simple color/gradient backgrounds included. Complex backgrounds +$5-$10<br><br>
+            <a href="">Additional Examples</a>   
+        </div>
+        
+        <div class="infocontent" id="chibi">
+            <img src="images/chibi.PNG">
+            <h1>Chibi</h1>
+            <h2>
+                Full body: $10 <br>
+            </h2>
+                >> Additional characters +80% price  <br>
+                >> Details and colors will be simplified. <br>
+                >> No background; simple backgrounds +$5-$10<br><br>
+            <a href="">Additional Examples</a>   
+        </div>
+        
+        <div class="infocontent" id="lined">
+            <img src="images/lined_big.PNG">
+            <h1>Lined Art</h1>
+            <h2>
+                Soft Shading:<br>
+                Bust: $10<br>
+                Partial Body: $15 <br>
+                Full Body: $25 <br> 
+                <br>
+                
+                Cel Shading: (pictured)<br>
+                Bust: $10<br>
+                Partial Body: $20 <br>
+                Full Body: $35 <br> 
+                
+            </h2>
+                
+                >> No background; simple backgrounds +$5-$10, complex backgrounds +$15-$25<br><br>
+    
+            <a href="">Additional Examples</a>   
+        </div>
+        
+        <div class="infocontent" id="render">
+            <img src="images/render.PNG">
+            <h1>Character Renders</h1>
+            <h2>
+                Bust / Simple creatures: $10<br>
+                Partial Body: $15 <br>
+                Full Body: $30 <br> 
+                <br>
+            </h2>
+                
+                >> No background. Drop shadow may be added for free on request. <br>
+                >> Highly detailed designs may be subject to an additional fee, or simplified on request.<br>
+                <br>
+    
+            <a href="">Additional Examples</a>   
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <button class="button" id="request">Request Commission</button>
+    </div>
 </div>
 
 <div class="polaroid" id="left">
   <img src="https://cdn.discordapp.com/attachments/258723064131354624/690110235267956750/sketch.PNG" class="thumb">
   <div class="container">
-  <button class="button">$5+</button>
+  <button class="button" onclick="popup('sketch')">$5+</button>
   <h1>Sketch</h1>
   <p>Status: Open</p>
   
@@ -31,7 +104,7 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
 <div class="polaroid" id="center">
   <img src="https://cdn.discordapp.com/attachments/258723064131354624/690110258068324373/chibi.PNG" class="thumb">
   <div class="container">
-  <button class="button">$10+</button>
+  <button class="button" onclick="popup('chibi')">$10+</button>
   <h1>Chibi</h1>
   <p>Status: Open</p>
   
@@ -42,7 +115,7 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
 <div class="polaroid" id="right">
   <img src="https://cdn.discordapp.com/attachments/258723064131354624/690110326238347274/lined.PNG" class="thumb">
   <div class="container">
-  <button class="button">$10+</button>
+  <button class="button" onclick="popup('lined')">$10+</button>
   <h1>Lined</h1>
   <p>Status: Open</p>
   
@@ -52,7 +125,7 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
 <div class="polaroid" id="left">
   <img src="https://cdn.discordapp.com/attachments/258723064131354624/690110297796771870/render.PNG" class="thumb">
   <div class="container">
-  <button class="button">$10+</button>
+  <button class="button" onclick="popup('render')">$10+</button>
   <h1>Render</h1>
   <p>Status: Open</p>
   
@@ -62,19 +135,19 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
 <div class="polaroid" id="center">
   <img src="https://cdn.discordapp.com/attachments/258723064131354624/690110335192924182/paint.PNG" class="thumb">
   <div class="container">
-  <button class="button">$35+</button>
-  <h1>Paint</h1>
+  <button class="button" onclick="popup('painted')">$35+</button>
+  <h1>Painted</h1>
   <p>Status: Open</p>
   
   </div>
 </div>
 
 <div class="polaroid" id="right">
-  <img src="images/lined.PNG" class="thumb">
+  <img src="" class="thumb">
   <div class="container">
   <button class="button">$120+</button>
   <h1>Character Sheets</h1>
-  <p>Status: Open</p>
+  <p>Status: Coming Soon!</p>
   
   </div>
 </div>
@@ -82,4 +155,6 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
 
 
 
+
+<script src="scripts.js"></script>
 </body>
