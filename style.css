@@ -6,8 +6,62 @@ body, html{
     font-family: "Quicksand", "Quicksand Medium", "Open Sans", sans-serif;
     letter-spacing: 1px;
 }
+@media all and (max-width: 800px) /* For Small Screens */
+{   
+    div.polaroid {
+      width: 60%;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 10px;
+      margin: 0% 20% 8%;
+    }
 
-@media (min-width: 800px) /* For Large Screens */
+    div.container {
+      text-align: left;
+      border-radius: 10px;
+      padding: 3% 7%;
+    }
+    
+    p {
+        margin: 0;
+        font-size: 3vw;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 5vw;
+    }
+    
+    h2 {
+        margin: 0;
+        font-size: 3.6vw;
+        font-weight: 200;
+        margin-bottom: 2%;
+        margin-top: 1%;
+    }
+    
+    .button {
+        background-color:#ffffff;
+        border-radius: 100px;
+        border: 3px solid #18ab29;
+        transition-duration: 0.2s;
+        color:#0d8533;
+        padding: 7% 5%;
+        float: right;
+        margin: 1%;
+        letter-spacing: 3px;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 3vw;
+        text-shadow:0px 1px 2px #44c767;
+        line-height: 0;
+
+    }
+    
+}
+
+
+@media all and (min-width: 800px) /* For Large Screens */
 {   
     div.polaroid {
         width: 24%;
@@ -72,59 +126,6 @@ body, html{
 }
 
 
-@media (max-width: 800px) /* For Small Screens */
-{   
-    div.polaroid {
-      width: 60%;
-      background-color: white;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      border-radius: 10px;
-      margin: 0% 20% 8%;
-    }
-
-    div.container {
-      text-align: left;
-      border-radius: 10px;
-      padding: 3% 7%;
-    }
-    
-    p {
-        margin: 0;
-        font-size: 3vw;
-    }
-
-    h1 {
-        margin: 0;
-        font-size: 5vw;
-    }
-    
-    h2 {
-        margin: 0;
-        font-size: 3.6vw;
-        font-weight: 200;
-        margin-bottom: 2%;
-        margin-top: 1%;
-    }
-    
-    .button {
-        background-color:#ffffff;
-        border-radius: 100px;
-        border: 3px solid #18ab29;
-        transition-duration: 0.2s;
-        color:#0d8533;
-        padding: 7% 5%;
-        float: right;
-        margin: 1%;
-        letter-spacing: 3px;
-        font-family: inherit;
-        font-weight: 600;
-        font-size: 3vw;
-        text-shadow:0px 1px 2px #44c767;
-        line-height: 0;
-
-    }
-    
-}
 
 a{
     color: #18ab29
