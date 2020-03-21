@@ -155,6 +155,9 @@ a{
     iframe.header{
         height: 95px;
     }
+    .top{
+       margin-top: 0px;
+    }
     
     div.polaroid {
         width: 24%;
