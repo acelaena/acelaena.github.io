@@ -95,9 +95,9 @@ a{
 .infobox {
     background-color: #ffffff;
     z-index: 3;
-    height: 70%;
+    height: 65%;
     width: 70%;
-    padding: 40pt 5% 75pt;
+    padding: 35pt 5% 75pt;
     margin: 25pt auto;
     border-radius: 20px;
     display: block;
@@ -107,7 +107,8 @@ a{
     z-index: 4;
     width: 100%;
     height: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     font-size: .9em;
     display: none;
 }
@@ -145,7 +146,7 @@ a{
     font-size: 1.1em;
 }
 
-@media screen and (min-width: 800px) and (orientation: landscape) /* For Large Screens */
+@media screen and (min-width: 600pt) and (orientation: landscape) /* For Large Screens */
 {   
     iframe.header{
         height: 95px;
