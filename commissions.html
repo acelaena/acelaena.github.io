@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="header.css">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
+<meta name="google-site-verification" content="5YekQm79YcwUf4dDThbzWmF-y0MICDpZr60ZrWsbQQU" />
+
+<title>Commission Information - Acelaena Art</title>
+</head>
+<body>
+<div id="background">
+    <div class="infobox">
+    <span class="close" onclick="closePopup()">&times;</span>
+        
+        <div class="infocontent" id="sketch">
+            <img src="images/sketch.PNG">
+            <h1>Simple Sketch</h1>
+            <h2>
+                Partial body / Simple creatures: $5 <br>
+                Full body / Complex creatures: $10 <br>
+            </h2>
+                >> Additional characters +80% price  <br>
+                >> Highly detailed designs may be subject to an additional fee, or simplified on request. <br>
+                >> Simple color/gradient backgrounds included. Complex backgrounds +$5-$10<br><br>
+            <a href="">Additional Examples</a>   
+        </div>
+        
+        <div class="infocontent" id="chibi">
+            <img src="images/chibi.PNG">
+            <h1>Chibi</h1>
+            <h2>
+                Full body: $10 <br>
+            </h2>
+                >> Additional characters +80% price  <br>
+                >> Details and colors will be simplified. <br>
+                >> No background; simple backgrounds +$5-$10<br>
+                >> Want it as a custom acrylic charm? Ask for availability, can be shipped anywhere in the world! 
+                <br>
+            <a href="">Additional Examples</a>   
+        </div>
+        
+        <div class="infocontent" id="lined">
+            <img src="images/lined_big.PNG">
+            <h1>Lined Art</h1>
+            <h2>
+                Soft Shading:<br>
+                Bust: $10<br>
+                Partial Body: $15 <br>
+                Full Body: $25 <br> 
+                <br>
+                
+                Cel Shading: (pictured)<br>
+                Bust: $10<br>
+                Partial Body: $20 <br>
+                Full Body: $35 <br> 
+                
+            </h2>
+                
+                >> No background; simple backgrounds +$5-$10, complex backgrounds +$15-$25<br><br>
+    
+            <a href="">Additional Examples</a>   
+        </div>
+        
+        <div class="infocontent" id="render">
+            <img src="images/render.PNG">
+            <h1>Character Renders</h1>
+            <h2>
+                Bust / Simple creatures: $10<br>
+                Partial Body: $15 <br>
+                Full Body: $30 <br> 
+                <br>
+            </h2>
+                
+                >> No background. Drop shadow may be added for free on request. <br>
+                >> Highly detailed designs may be subject to an additional fee, or simplified on request.<br>
+                <br>
+    
+            <a href="">Additional Examples</a>   
+        </div>
+
+        <div class="infocontent" id="painted">
+            <img src="images/paint.PNG">
+            <h1>Paintings </h1>
+            <h2>
+                Starting at $35 
+                <br>
+            </h2>
+                
+                >> Please request a quote! Simple character paintings are typically ~$35-$55, additional characters and detailed backgrounds will cost extra. 
+                
+                <br><br>
+    
+            <a href="">Additional Examples</a>   
+        </div>
+
+        
+        
+        <button class="button" id="request">Request Commission</button>
+    </div>
+</div>
+
+<div class="header">
+    <div class="left">
+        <h1> Acelaena Art</h1>
+        <p>Art and designs by Alina Xia</p>
+    </div>
+    
+    <div class="right">
+        <a href="index.html" class="first">
+        About</a><a href="" >
+        Portfolio</a><a href="commissions.html" id="active">
+        Commission</a><a href="" >
+        Merch</a><a href="" class="last">
+        Blog</a>
+    </div>    
+</div>
+
+
+<div id="page" style="margin-top: 10px;">
+    <div class="polaroid" id="left">
+      <img src="images/sketch.PNG" class="polaroid">
+      <div class="container">
+      <button class="button" onclick="popup('sketch')">$5+</button>
+      <h1>nine</h1>
+      <p>Status: Open</p>
+
+      </div>
+    </div>
+
+
+    <div class="polaroid" id="center">
+      <img src="images/chibi.PNG" class="polaroid">
+      <div class="container">
+      <button class="button" onclick="popup('chibi')">$10+</button>
+      <h1>Chibi</h1>
+      <p>Status: Open</p>
+
+      </div>
+    </div>
+
+
+    <div class="polaroid" id="right">
+      <img src="images/lined.PNG" class="polaroid">
+      <div class="container">
+      <button class="button" onclick="popup('lined')">$10+</button>
+      <h1>Lined</h1>
+      <p>Status: Open</p>
+
+      </div>
+    </div>
+
+    <div class="polaroid" id="left">
+      <img src="images/render.PNG" class="polaroid">
+      <div class="container">
+      <button class="button" onclick="popup('render')">$10+</button>
+      <h1>Render</h1>
+      <p>Status: Open</p>
+
+      </div>
+    </div>
+
+    <div class="polaroid" id="center">
+      <img src="images/paint.PNG" class="polaroid">
+      <div class="container">
+      <button class="button" onclick="popup('painted')">$35+</button>
+      <h1>Painted</h1>
+      <p>Status: Open</p>
+
+      </div>
+    </div>
+
+    <div class="polaroid" id="right">
+      <img src="" class="thumb">
+      <div class="container">
+      <button class="button">$120+</button>
+      <h1>Character Sheets</h1>
+      <p>Status: Coming Soon!</p>
+
+      </div>
+    </div>
+
+</div>
+
+
+
+<script src="scripts.js"></script>
+</body>
