@@ -1,3 +1,5 @@
+
+
 div.polaroid {
   width: 60%;
   background-color: white;
@@ -10,6 +12,7 @@ div.polaroid-tab {
   text-align: left;
   border-radius: 10px;
   padding: 3% 7%;
+  box-sizing: border-box;
 }
 
 .polaroid img{
@@ -32,12 +35,13 @@ div.polaroid-tab {
 .infobox {
     background-color: #ffffff;
     z-index: 3;
-    height: 65%;
-    width: 70%;
+    height: 90%;
+    width: 90%;
     padding: 35pt 40pt 75pt;
     margin: 25pt auto;
     border-radius: 20px;
     display: block;
+    box-sizing: border-box;
 }
 
 .infocontent {
@@ -83,6 +87,7 @@ div.polaroid-tab {
     margin-left: -5pt;
     float: left;
     font-size: 1.1em;
+    box-sizing: border-box;
 }
 
 @media screen and (min-width: 800px) and (orientation: landscape) /* For Large Screens */
@@ -106,6 +111,7 @@ div.polaroid-tab {
     
     div.polaroid-tab {
         padding: 5% 10%;
+        box-sizing: border-box;
     }
 
 
