@@ -19,7 +19,7 @@ body {
     overflow: hidden;
 }
 
- div.left {
+ .header div.left {
     display: block; 
     position: relative;
     width: 300px;
@@ -27,7 +27,7 @@ body {
     padding-top: 25px;
     padding-left: 10%;
 }
-div.right{
+.header div.right{
     display: flex; 
     width: 100%;
     position: relative;
@@ -35,7 +35,7 @@ div.right{
     margin: 0;
     }
 
-a{
+.header a{
     text-decoration: none;
     font-weight: 500;
     display: inline-block;
@@ -48,19 +48,14 @@ a{
     width: 20%;
 
 }
-a:hover, a:active {
+.header a:hover, .header a:active {
     position: relative;
     background-color: #cfeacf;
     text-shadow:0px 1px 2px #44c767;
 }
 
-a.dropdown{
-    display: block;
-    position: absolute;
-}
 
-
-h1 {
+.header h1 {
     font-family: "BlackJack", cursive;
     letter-spacing: 0px;
     font-size: 42pt;
@@ -68,7 +63,7 @@ h1 {
     line-height: 1;
     display:block;
 }
-p {
+.header p {
     margin: 0px;
     margin-top: -10px;
     font-size: 1.2em;
@@ -81,13 +76,13 @@ p {
 { 
     .header {height: 100px;}
     
-    h1 {
+    .header h1 {
         font-size: 36pt;
         line-height: 1.1;
     }
-    p {font-size: 1em;}
+    .header p {font-size: 1em;}
 
-    a {
+    .header a {
         top: -80px;
         padding: 80px 12px 20px;
         margin: 0;
@@ -96,16 +91,16 @@ p {
         background-color: #fcfcfc;
         transition-duration: 0.3s;
     }
-    a:hover, a:active {top:-50px;}
-    a.first{border-bottom-left-radius: 10px;}
-    a.last{border-bottom-right-radius: 10px;}
+    .header a:hover, .header a:active {top:-50px;}
+    .header a.first{border-bottom-left-radius: 10px;}
+    .header a.last{border-bottom-right-radius: 10px;}
 
-    div.left {
+    .header div.left {
         padding-top: 20px;
         padding-left: 7%;
     }
 
-    div.right{
+    .header div.right{
         display: block;
         position: relative;
         top: -110px;
@@ -126,21 +121,19 @@ p {
 
 <body>
 <div class="header">
-<div class="left">
-    <h1> Acelaena Art</h1>
-    <p>Art and designs by Alina Xia</p>
-</div>
-<div class="right">
-    <a href="" class="first">
-    About</a><a href="" >
-    Portfolio</a><a href="" >
-    Commissions</a><a href="" >
-    Merch</a><a href="" class="last">
-    Blog</a>
+    <div class="left">
+        <h1> Acelaena Art</h1>
+        <p>Art and designs by Alina Xia</p>
+    </div>
     
-    
-</div>    
-    
+    <div class="right">
+        <a href="" class="first">
+        About</a><a href="" >
+        Portfolio</a><a href="" >
+        Commissions</a><a href="" >
+        Merch</a><a href="" class="last">
+        Blog</a>
+    </div>    
 </div>
 
 
