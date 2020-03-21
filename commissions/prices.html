@@ -2,10 +2,13 @@
 <html>
 <head>
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="../styles/style.css">
+<link rel="stylesheet" href="../styles/header.css">
+<link rel="stylesheet" href="../styles/commission.css">
+
+
 <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
-<meta name="google-site-verification" content="5YekQm79YcwUf4dDThbzWmF-y0MICDpZr60ZrWsbQQU" />
+
 
 <title>Commission Information - Acelaena Art</title>
 </head>
@@ -15,11 +18,11 @@
     <span class="close" onclick="closePopup()">&times;</span>
         
         <div class="infocontent" id="sketch">
-            <img src="images/sketch.PNG">
+            <img src="../images/sketch.PNG">
             <h1>Simple Sketch</h1>
             <h2>
-                Partial body / Simple creatures: $5 <br>
-                Full body / Complex creatures: $10 <br>
+                Partial body: $5 <br>
+                Full body: $10 <br>
             </h2>
                 >> Additional characters +80% price  <br>
                 >> Highly detailed designs may be subject to an additional fee, or simplified on request. <br>
@@ -28,7 +31,7 @@
         </div>
         
         <div class="infocontent" id="chibi">
-            <img src="images/chibi.PNG">
+            <img src="../images/chibi.PNG">
             <h1>Chibi</h1>
             <h2>
                 Full body: $10 <br>
@@ -42,7 +45,7 @@
         </div>
         
         <div class="infocontent" id="lined">
-            <img src="images/lined_big.PNG">
+            <img src="../images/lined_big.PNG">
             <h1>Lined Art</h1>
             <h2>
                 Soft Shading:<br>
@@ -64,10 +67,10 @@
         </div>
         
         <div class="infocontent" id="render">
-            <img src="images/render.PNG">
+            <img src="../images/render.PNG">
             <h1>Character Renders</h1>
             <h2>
-                Bust / Simple creatures: $10<br>
+                Bust: $10<br>
                 Partial Body: $15 <br>
                 Full Body: $30 <br> 
                 <br>
@@ -81,7 +84,7 @@
         </div>
 
         <div class="infocontent" id="painted">
-            <img src="images/paint.PNG">
+            <img src="../images/paint.PNG">
             <h1>Paintings </h1>
             <h2>
                 Starting at $35 
@@ -108,9 +111,9 @@
     </div>
     
     <div class="right">
-        <a href="index.html" class="first">
+        <a href="../" class="first">
         About</a><a href="" >
-        Portfolio</a><a href="commissions.html" id="active">
+        Portfolio</a><a href="." id="active">
         Commission</a><a href="" >
         Merch</a><a href="" class="last">
         Blog</a>
@@ -120,10 +123,10 @@
 
 <div id="page" style="margin-top: 10px;">
     <div class="polaroid" id="left">
-      <img src="images/sketch.PNG" class="polaroid">
-      <div class="container">
+      <img src="../images/sketch.PNG" class="polaroid" onclick="popup('sketch')" >
+      <div class="polaroid-tab">
       <button class="button" onclick="popup('sketch')">$5+</button>
-      <h1>nine</h1>
+      <h1>Sketch</h1>
       <p>Status: Open</p>
 
       </div>
@@ -131,8 +134,8 @@
 
 
     <div class="polaroid" id="center">
-      <img src="images/chibi.PNG" class="polaroid">
-      <div class="container">
+      <img src="../images/chibi.PNG" class="polaroid" onclick="popup('chibi')">
+      <div class="polaroid-tab">
       <button class="button" onclick="popup('chibi')">$10+</button>
       <h1>Chibi</h1>
       <p>Status: Open</p>
@@ -142,8 +145,8 @@
 
 
     <div class="polaroid" id="right">
-      <img src="images/lined.PNG" class="polaroid">
-      <div class="container">
+      <img src="../images/lined.PNG" class="polaroid" onclick="popup('lined')">
+      <div class="polaroid-tab">
       <button class="button" onclick="popup('lined')">$10+</button>
       <h1>Lined</h1>
       <p>Status: Open</p>
@@ -152,8 +155,8 @@
     </div>
 
     <div class="polaroid" id="left">
-      <img src="images/render.PNG" class="polaroid">
-      <div class="container">
+      <img src="../images/render.PNG" class="polaroid" onclick="popup('render')">
+      <div class="polaroid-tab">
       <button class="button" onclick="popup('render')">$10+</button>
       <h1>Render</h1>
       <p>Status: Open</p>
@@ -162,8 +165,8 @@
     </div>
 
     <div class="polaroid" id="center">
-      <img src="images/paint.PNG" class="polaroid">
-      <div class="container">
+      <img src="../images/paint.PNG" class="polaroid" onclick="popup('painted')">
+      <div class="polaroid-tab">
       <button class="button" onclick="popup('painted')">$35+</button>
       <h1>Painted</h1>
       <p>Status: Open</p>
@@ -173,7 +176,7 @@
 
     <div class="polaroid" id="right">
       <img src="" class="thumb">
-      <div class="container">
+      <div class="polaroid-tab">
       <button class="button">$120+</button>
       <h1>Character Sheets</h1>
       <p>Status: Coming Soon!</p>
@@ -185,5 +188,5 @@
 
 
 
-<script src="scripts.js"></script>
+<script src="../scripts.js"></script>
 </body>
