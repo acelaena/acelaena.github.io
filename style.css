@@ -89,7 +89,7 @@ div.container {
     z-index: 3;
     height: 65%;
     width: 70%;
-    padding: 35pt 5% 75pt;
+    padding: 35pt 40pt 75pt;
     margin: 25pt auto;
     border-radius: 20px;
     display: block;
@@ -120,6 +120,8 @@ div.container {
   margin-bottom: -10pt;
   font-size: 35pt;
   font-weight: bold;
+  position: relative;
+  z-index: 1;
 }
 
 .close:hover,
@@ -161,7 +163,7 @@ div.container {
     position: relative;
     z-index: 2;
     margin: 0;
-    }
+}
 
 .header a{
     text-decoration: none;
@@ -246,6 +248,7 @@ div.container {
         height: 10px; 
         background-color: #fcfcfc;
         transition-duration: 0.3s;
+        font-size: 1em;
     }
     .header a:hover, .header a:active {top:-50px;}
     .header a.first{border-bottom-left-radius: 10px;}
