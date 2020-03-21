@@ -7,29 +7,11 @@ body, html{
     background-color: #e8f6ce
 }
 
-div.polaroid {
-  width: 60%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
-  margin: 0% 20% 8%;
+a{
+    color: #18ab29
 }
-
-
-div.container {
-  text-align: left;
-  border-radius: 10px;
-  padding: 3% 7%;
-}
-
-img.thumb {
-	border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    width: 100%;
-}
-
 p {margin: 0;}
-h1 {
+ h1 {
     margin: 0;
     font-size: 5vw;
 }
@@ -41,10 +23,25 @@ h2 {
     margin-bottom: 2%;
 }
 
-a{
-    color: #18ab29
+div.polaroid {
+  width: 60%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  margin: 0% 20% 8%;
 }
 
+div.container {
+  text-align: left;
+  border-radius: 10px;
+  padding: 3% 7%;
+}
+
+.polaroid img{
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
 
 .button {
     background-color:#ffffff;
@@ -202,8 +199,6 @@ a{
 
 @media screen and (min-width: 800px) and (orientation: landscape) /* For Large Screens */
 {   
-    
-    
     div.polaroid {
         width: 24%;
         margin: 2%;
@@ -271,6 +266,7 @@ a{
         text-align: right;
         margin-right: 4%;
     
+    }
 }
 
     
