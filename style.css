@@ -4,20 +4,13 @@ body, html{
     margin: 0;
     font-family: "Quicksand", "Open Sans", sans-serif;
     letter-spacing: 1px;
-    background-color: #e8f6ce;
+    background-color: #e8f6ce
 }
-
-.top{
-    position:absolute;
-    top: 160px;
-}
-
 iframe.header{
         height: 820px;
         width: 100%;
         border: none;
         overflow: hidden;
-        z-index: -1;
     }
   
 div.polaroid {
@@ -26,6 +19,10 @@ div.polaroid {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
   margin: 0% 20% 8%;
+}
+
+.top{
+    margin-top: -660px;
 }
 
 div.container {
@@ -155,12 +152,8 @@ a{
 
 @media screen and (min-width: 600pt) and (orientation: landscape) /* For Large Screens */
 {   
-    .top{
-        position:absolute;
-        top: 100px;
-    }
     iframe.header{
-        height: 100px;
+        height: 95px;
     }
     
     div.polaroid {
