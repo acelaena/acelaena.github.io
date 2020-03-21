@@ -6,6 +6,12 @@ body, html{
     letter-spacing: 1px;
     background-color: #e8f6ce
 }
+iframe.header{
+        height: 200px;
+        width: 100%;
+        border: none;
+        overflow: hidden;
+    }
   
 div.polaroid {
   width: 60%;
@@ -22,15 +28,12 @@ div.container {
 }
 
 img.thumb {
-	border-radius: 10px;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     width: 100%;
 }
 
-p {
-    margin: 0;
-    font-size: 3vw;
-}
-
+p {margin: 0;}
 h1 {
     margin: 0;
     font-size: 5vw;
@@ -60,7 +63,7 @@ a{
     letter-spacing: 3px;
     font-family: inherit;
     font-weight: 600;
-    font-size: 3vw;
+    font-size: 1.3em;
     text-shadow:0px 1px 2px #44c767;
     line-height: 0;
 }
@@ -70,10 +73,13 @@ a{
 .button:hover {
 	background-color:#44c767;
     color: #ffffff;
+    cursor: pointer;
 }
 .button:active {
 	position:relative;
 	top:1px;
+    cursor: pointer;
+
 }
 
 #background {
@@ -82,7 +88,7 @@ a{
     z-index: 2;
     height: 100%;
     width: 100%;
-    overflow: scroll;
+    overflow: hidden;
     display: none;
 }
 
@@ -118,7 +124,7 @@ a{
   color: #aaa;
   float: right;
   margin-top: -40pt;
-  margin-bottom: -10px;
+  margin-bottom: -10pt;
   font-size: 35pt;
   font-weight: bold;
 }
@@ -141,6 +147,10 @@ a{
 
 @media screen and (min-width: 800px) and (orientation: landscape) /* For Large Screens */
 {   
+    iframe.header{
+        height: 100px;
+    }
+    
     div.polaroid {
         width: 24%;
         margin: 2%;
@@ -162,12 +172,11 @@ a{
         padding: 5% 10%;
     }
     
-    p {font-size: 1.5vw;}
     h1 {font-size: 2.8vw;}
-    h2 {font-size: 2vw;}
+    h2 {font-size: 1.8em;}
     
     .button {
-        font-size: 1.7vw;
+        font-size: 1.2em;
         font-weight: 500;
         padding: 8% 6%;
     }
