@@ -7,7 +7,7 @@ body, html{
     background-color: #e8f6ce
 }
 iframe.header{
-        height: 200px;
+        height: 150px;
         width: 100%;
         border: none;
         overflow: hidden;
