@@ -92,7 +92,9 @@ li{
 .zoom{
     transform: scale(2);
     position: relative;
-    left:60%;
+    left: 25%;
+    margin: 0 auto;    
+    width: 174px;
     margin: 10px;
 }
 
