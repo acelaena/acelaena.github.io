@@ -12,6 +12,7 @@ div.polaroid-tab {
   border-radius: 10px;
   padding: 3% 7%;
   box-sizing: border-box;
+  word-wrap: break-word;
 }
 
 .polaroid img{
@@ -92,27 +93,21 @@ div.polaroid-tab {
 @media screen and (min-width: 800px) and (orientation: landscape) /* For Large Screens */
 {   
     div.polaroid {
-        width: 24%;
+        width: 29.33%;
         margin: 2%;
     }
     div.polaroid#left {
         clear: both; float: left;
-        margin-left: 10%;
     }
     div.polaroid#center{
         float:left;    
     }
-
     div.polaroid#right {
         float: right;
-        margin-right: 10%;
     }
-    
     div.polaroid-tab {
         padding: 5% 10%;
         box-sizing: border-box;
     }
-
-
 
 }
