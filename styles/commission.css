@@ -1,10 +1,11 @@
 /*For small screens*/
 div.polaroid {
-  width: 60%;
-  background-color: white;
+  max-width: 80%;
+  flex:100%;
+  background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
-  margin: 10% 20%;
+  margin: 10%;
 }
 
 div.polaroid-tab {
@@ -12,7 +13,6 @@ div.polaroid-tab {
   border-radius: 10px;
   padding: 3% 7%;
   box-sizing: border-box;
-  word-wrap: break-word;
 }
 
 .polaroid img{
@@ -20,16 +20,6 @@ div.polaroid-tab {
     border-top-right-radius: 10px;
     width: 100%;
     cursor: pointer;
-}
-
-#background {
-    background-color: rgb(83, 86, 95, 0.8);
-    position: fixed;
-    z-index: 2;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    display: none;
 }
 
 .infobox {
@@ -73,8 +63,7 @@ div.polaroid-tab {
   z-index: 1;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -93,18 +82,12 @@ div.polaroid-tab {
 @media screen and (min-width: 800px) and (orientation: landscape) /* For Large Screens */
 {   
     div.polaroid {
-        width: 29.33%;
-        margin: 2%;
+        flex: 33%;
+        max-width: 250px;
+        margin: 10px;
+        box-sizing: border-box;
     }
-    div.polaroid#left {
-        clear: both; float: left;
-    }
-    div.polaroid#center{
-        float:left;    
-    }
-    div.polaroid#right {
-        float: right;
-    }
+
     div.polaroid-tab {
         padding: 5% 10%;
         box-sizing: border-box;

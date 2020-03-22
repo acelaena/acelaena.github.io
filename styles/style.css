@@ -34,9 +34,12 @@ li{
 .container {
     width: 100%; 
     height: auto;
-    padding: 4% 10%;    
+    padding: 4% 7%;    
     box-sizing: border-box;
-    display: inline-block;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .row {
@@ -44,28 +47,26 @@ li{
     flex-wrap: wrap;
 }
 
-.column
-{
-    width: 100%;
-    flex-shrink: 0;
-}
-
+.column{width: 100%;}
+.column-wide {width:100%;}
 
 .button {
+    display: inline-block;
     background-color:#ffffff;
+    position: relative;
     border-radius: 100px;
     border: 3px solid #18ab29;
     transition-duration: 0.2s;
     color:#0d8533;
     padding: 7% 5%;
     float: right;
-    margin: 1%;
     letter-spacing: 3px;
     font-family: inherit;
     font-weight: 600;
-    font-size: 1.3em;
+    font-size: 1.4em;
     text-shadow:0px 1px 2px #44c767;
     line-height: 0;
+    width: fit-content;
 }
 
 .button:hover {
@@ -79,12 +80,14 @@ li{
     cursor: pointer;
 }
 
-img.flex {
-    width:100%;
-}
-div.flex{
-    width:100%;
-
+#background {
+    background-color: rgb(83, 86, 95, 0.8);
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: none;
 }
 
 @media screen and (min-width: 800px) and (orientation: landscape) /* For Large Screens */
@@ -94,20 +97,14 @@ div.flex{
     h2 {font-size: 2vw;}
     
     .button {
-        font-size: 1.2em;
+        font-size: 1.6vw;
         font-weight: 500;
         padding: 8% 6%;
-    }
-    img.flex {
-        width: 50%;
-        margin-right:5%;
-    }
-    div.flex {
-        width: 45%;
     }
     .column {
         width: 46%;
         padding: 0 2%;
+        box-sizing: border-box;
     }
     
 }
