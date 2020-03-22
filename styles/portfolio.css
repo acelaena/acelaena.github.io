@@ -5,14 +5,16 @@
   box-sizing: border-box;
 }
 
-/* single column for small screens*/
+/* 2 column for small screens*/
 .column {
-    flex: 100%;
-    max-width: 100%;
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 0.25%;
+    box-sizing: border-box;
   }
 
 .column img {
-  margin-top: 4px;
+  margin-top: 2%;
   vertical-align: middle;
   
 }
@@ -23,17 +25,8 @@
   .column {
   flex: 25%;
   max-width: 25%;
-  padding: 0 2px;
+  padding: 0 0.25%;
     box-sizing: border-box;
 
 }
-}
-
-/* Responsive layout - 2 columns for 400-800px */
-@media (min-width: 400px) {
-  
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
 }
