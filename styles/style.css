@@ -89,6 +89,12 @@ li{
     overflow: hidden;
     display: none;
 }
+.zoom{
+    transform: scale(2);
+    position: relative;
+    left:60%;
+    margin: 10px;
+}
 
 @media screen and (min-width: 800px) and (orientation: landscape) /* For Large Screens */
 {   
@@ -105,6 +111,10 @@ li{
         width: 46%;
         padding: 0 2%;
         box-sizing: border-box;
+    }
+    .zoom{
+        transform: scale(1);
+        position: static;
     }
     
 }
