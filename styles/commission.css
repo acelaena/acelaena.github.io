@@ -28,7 +28,7 @@ div.polaroid-tab {
     z-index: 3;
     height: 90%;
     width: 90%;
-    padding: 30px 20px 80px;
+    padding: 30px 30px 80px;
     margin: 25pt auto;
     border-radius: 20px;
     display: block;
@@ -45,18 +45,13 @@ div.polaroid-tab {
     display: none;
 }
 
-.infobox img{
-    height: 40%;
-    max-height: 300px;
-    margin: 0 auto;
-    display: block;
-}
+.infobox img{display: none;}
 
 #request {
     height: 50px;
     padding: 12px;
     margin: 5px;
-    float: left;
+    float: none;
     font-size: .9em;
     box-sizing: border-box;
 }
@@ -70,10 +65,7 @@ div.polaroid-tab {
         box-sizing: border-box;
     }
 
-    div.polaroid-tab {
-        padding: 5% 10%;
-        box-sizing: border-box;
-    }
+    div.polaroid-tab {padding: 5% 10%;    }
     
     #request {
         height: 40pt;
@@ -94,8 +86,6 @@ div.polaroid-tab {
         display: block;
         float: right;
     }
-    .polaroid h1,{
-        font-size: 2em;
-    }
+    .polaroid h1 {font-size: 2em;}
 
 }

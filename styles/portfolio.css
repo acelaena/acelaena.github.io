@@ -47,6 +47,11 @@
     padding: 10% 8% 4%;
 }
 
+.overlay h1{
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
 
 .shadowbox:hover .overlay{
     opacity: 1;
@@ -55,16 +60,15 @@
 
 .tag {
     background-color:#efefef;
-    border-radius: 15px;
+    border-radius: 5px;
     border: none;
     transition-duration: 0.2s;
     color:#888888;
-    padding: 15px;
+    padding: 8px;
+    font-size: 1em;
     margin: 5px;
     font-family: inherit;
     font-weight: 600;
-    font-size: 2em;
-    box-sizing: border-box;
 }
 
 .tag:hover {
@@ -107,13 +111,21 @@
     background: rgb(206,206,206);
     background: linear-gradient(0deg, rgba(206,206,206,1) 50%, rgba(206,206,206,.85) 75%, rgba(206,206,206,0) 100%);
     color: #121212;
-    width: 111%;
+    width: 112%;
     height: 41%;
-    margin: 0 -5%;
+    margin: 0 -6%;
     padding: 3.5%;
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+#title {
+    font-size: 2.6em;
+}
+#desc {
+    font-size: 1.1em;
+}
+
 
 /* Responsive layout - 4 columns for 800px+ */
 @media (min-width: 800px) and (orientation: landscape){
@@ -129,16 +141,11 @@
         padding: 0 0.25%;
         box-sizing: border-box;
     }
-    .overlay h1{
-        font-size: 2.2vw;
-        font-weight: 600;
-    }   
     
-    .tag {
-        border-radius: 5px;
-        padding: 8px;
-        margin: 5px;
-        font-weight: 400;
-        font-size: 1em;
-    }
+    .overlay h1{font-size: 2.2vw;}   
+    
+    .tag {font-weight: 400;}
+    
+    #title {font-size: 2.2vw;}
+    #desc {font-size: inherit;}
 }
