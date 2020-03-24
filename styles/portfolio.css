@@ -65,8 +65,8 @@
     transition-duration: 0.2s;
     color:#888888;
     padding: 8px;
-    font-size: 1em;
-    margin: 5px;
+    font-size: .9em;
+    margin: 2px;
     font-family: inherit;
     font-weight: 600;
 }
@@ -120,10 +120,10 @@
 }
 
 #title {
-    font-size: 2.6em;
+    font-size: 2em;
 }
 #desc {
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 
