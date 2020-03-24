@@ -28,10 +28,10 @@
     display: inline-block;
     position: relative;
     text-align: center;
-    padding: 6px;
+    padding: 6px 0px;
     transition-duration: 0.3s;
     background-color: #fcfcfc;
-    font-size: 1em;
+    font-size: .8em;
     font-weight: 900;
     min-width: fit-content;
 }
