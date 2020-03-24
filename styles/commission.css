@@ -3,9 +3,9 @@ div.polaroid {
     max-width: 80%;
     flex:100%;
     background-color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    margin: 10%;
+    margin: 4%;
 }
 
 div.polaroid-tab {
@@ -27,7 +27,7 @@ div.polaroid-tab {
     z-index: 3;
     height: 90%;
     width: 90%;
-    padding: 35pt 40pt 75pt;
+    padding: 30px 20px 80px;
     margin: 25pt auto;
     border-radius: 20px;
     display: block;
@@ -45,20 +45,17 @@ div.polaroid-tab {
 }
 
 .infobox img{
-    width: 90%;
-    max-width: 450px;
+    max-height: 300px;
     margin: 0 auto;
     display: block;
-    float: right;
 }
 
 #request {
-    height: 40pt;
-    padding: 18pt;
-    margin: 5pt;
-    margin-left: -5pt;
+    height: 50px;
+    padding: 12px;
+    margin: 5px;
     float: left;
-    font-size: 1.1em;
+    font-size: .9em;
     box-sizing: border-box;
 }
 
@@ -75,11 +72,28 @@ div.polaroid-tab {
         padding: 5% 10%;
         box-sizing: border-box;
     }
-
-}
-
-@media screen and (min-width: 1280px) and (orientation: landscape)
-{
-    h1 {font-size: 2em;}
     
+    #request {
+        height: 40pt;
+        padding: 18pt;
+        margin: 5pt;
+        margin-left: -5pt;
+        float: left;
+        font-size: 1.1em;
+        box-sizing: border-box;
+    }
+    
+    .infobox {padding: 35pt 40pt 75pt;}
+    
+    .infobox img{
+        width: 90%;
+        max-width: 450px;
+        margin: 0 auto;
+        display: block;
+        float: right;
+    }
+    .polaroid h1,{
+        font-size: 2em;
+    }
+
 }

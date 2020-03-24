@@ -12,7 +12,7 @@ p {margin: 0;}
 
 h1 {
     margin: 0;
-    font-size: 5vw;
+    font-size: 2em;
 }
 
 h2 {
@@ -93,8 +93,8 @@ li{
 .close {
     color: #aaa;
     float: right;
-    margin-top: -40pt;
-    margin-bottom: -10pt;
+    margin-top: -35px;
+    margin-bottom: -10px;
     font-size: 35pt;
     font-weight: bold;
     position: relative;
@@ -138,5 +138,7 @@ li{
     }
     
 }
+
+
 
     
