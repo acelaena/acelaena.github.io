@@ -108,6 +108,7 @@ li{
     cursor: pointer;
 }
 
+/*
 .zoom{
     transform: scale(2.5);
     position: relative;
@@ -115,6 +116,7 @@ li{
     margin: 10px;
     margin-top: 100px;
 }
+*/
 
 @media screen and (min-width: 800px) and (orientation: landscape) /* For Large Screens */
 {   
