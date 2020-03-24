@@ -111,6 +111,8 @@
     height: 41%;
     margin: 0 -5%;
     padding: 3.5%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* Responsive layout - 4 columns for 800px+ */
