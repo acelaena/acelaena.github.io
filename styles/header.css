@@ -70,7 +70,7 @@
     .header p {font-size: 1em;}
 
     .header a {
-        top: -80px;
+        top: -70px;
         padding: 80px 12px 20px;
         margin: 0;
         width: auto;
@@ -79,7 +79,7 @@
         transition-duration: 0.3s;
         font-size: 1em;
     }
-    .header a:hover, .header a:active {top:-60px; border-radius:10px;}
+    .header a:hover, .header a:active {top:-50px; border-radius:10px;}
     .header a.first{border-bottom-left-radius: 10px;}
     .header a.last{border-bottom-right-radius: 10px;}
     .header #active {top:-60px; border-radius:10px;}

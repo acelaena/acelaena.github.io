@@ -47,9 +47,10 @@
     padding: 10% 8% 4%;
 }
 
+
 .shadowbox:hover .overlay{
     opacity: 1;
-
+    cursor: pointer;
 }
 
 .tag {
@@ -77,7 +78,40 @@
 	top:1px;
     cursor: pointer;
 }
+.tag #active {
+	background-color:#ffffff;
+    color: #0d8533;
+    text-shadow:0px 1px 1px #44c767;
+}
 
+.artbox {
+    box-sizing: border-box;
+    width: 90%;
+    height: 100%;
+    padding: 3% 0;
+    margin: 0 5%;
+}
+
+.art-content {
+    width:100%;
+    height: 80%;
+    background-image: url(../portfolio/gallery/by_morning_light.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.art-info {
+    position: relative;
+    box-sizing: border-box;
+    top: -6%;
+    background: rgb(206,206,206);
+    background: linear-gradient(0deg, rgba(206,206,206,1) 50%, rgba(206,206,206,.85) 75%, rgba(206,206,206,0) 100%);
+    color: #121212;
+    width: 111%;
+    height: 41%;
+    margin: 0 -5%;
+    padding: 3.5%;
+}
 
 /* Responsive layout - 4 columns for 800px+ */
 @media (min-width: 800px) and (orientation: landscape){
@@ -93,6 +127,10 @@
         padding: 0 0.25%;
         box-sizing: border-box;
     }
+    .overlay h1{
+        font-size: 2.2vw;
+        font-weight: 600;
+    }   
     
     .tag {
         border-radius: 5px;

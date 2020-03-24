@@ -14,6 +14,21 @@
 
 
 <body>
+<!--Popup zoom -->
+<div id="background">
+    <div class="artbox">
+        <span class="close" onclick="closeArtbox()" style="margin:0;">&times;</span>
+            <div class="art-content" id="box"></div>
+        <div class="art-info">
+            <h1 id="title">Title</h1>
+            <p id="desc" style="height: 50%; overflow: scroll;">description </p>
+            <p id="tags" style="color:#666; font-size: 0.8em;">#tags</p>
+        </div>
+    </div>
+  
+</div>
+<!--END POPUP -->
+
 <!--HEADER -->
 <div class="header">
     <div class="left">
@@ -33,21 +48,33 @@
 <!--END HEADER -->
 
 
-
 <div class="container" style="padding-left: 2%; padding-right: 2%">
 <div class="gallery">
- uhh tags go here ig 
- <button class="tag">#renders</button> 
- <button class="tag">#sketches</button>
- <button class="tag">#fanart</button>
  
+ <button class="tag">#fanart</button> 
+ <button class="tag">#sketches</button>
+ <button class="tag">#renders</button>
+ <button class="tag">#lined</button>
+ <button class="tag">#paintings</button>
+ <button class="tag">#traditional_art</button>
+ <button class="tag">#chibi</button>
+ <button class="tag">#commissions</button>
+ <button class="tag">#character_design</button>
+ <button class="tag">#MXTX</button>
+ <button class="tag">#Fire_Emblem</button>
+ <button class="tag">#Fate_Grand_Order</button>
+ <button class="tag">#Pokemon</button>
+ <button class="tag">#Kingdom_Hearts</button>
+ <button class="tag">#Dragalia_Lost</button>
+ <button class="tag">#Original_Art</button>
  
 </div>
+<!--Wide Features -->
 <div class="gallery">
     <div class="column-wide">
-        <div class="shadowbox">
+        <div class="shadowbox" >
             <img src="thumbs/hua_mulan.jpg">
-            <div class="overlay">
+            <div class="overlay" onclick="showArtbox('hua_mulan.PNG', 'Hua Mulan', 'One of my favorite disney movies of all time! Here\'s my take on the Dragon Warrior princess, a bit inspired in part by the new live-action Mulan.', '#fanart #paintings #character_design')">
                 <h1>Hua Mulan</h1>
                 <p>Oct. 2019</p>
             </div>
@@ -64,7 +91,7 @@
         </div>
     </div>
 </div>
- 
+ <!--4 column -->
 <div class="gallery"> 
     <div class="column">
         
@@ -150,68 +177,316 @@
         
 
         
-
-        <img src="thumbs/Dazai_chibi.png">
-        <img src="thumbs/Chuuya_chibi.png">
+        <div class="shadowbox">
+            <img src="thumbs/Dazai_chibi.png">
+            <div class="overlay">
+                <h1>Dazai Osamu Charm</h1>
+                <p>Oct. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/Chuuya_chibi.png">
+            <div class="overlay">
+                <h1>Chuuya Nakahara Charm</h1>
+                <p>Oct. 2019</p>
+            </div>
+        </div>
+        
     </div>
   
     <div class="column">
+        <div class="shadowbox">
+            <img src="thumbs/BH_final.png">
+            <div class="overlay">
+                <h1>Beast Hunter Book Cover</h1>
+                <p>Nov. 2019</p>
+            </div>
+        </div>
         
-        <img src="thumbs/BH_final.png">
-        <img src="thumbs/drunken_dream.jpg">
-        <img src="thumbs/breaking_sky.jpg">
-        <img src="thumbs/Joywing_sketch_commission.jpg">
-        <img src="thumbs/Nobukita_commission.jpg" >
-        <img src="thumbs/Lenn_sketch.jpg">
+        <div class="shadowbox">
+            <img src="thumbs/drunken_dream.jpg">
+            <div class="overlay">
+                <h1>Drunken Dream of the Past</h1>
+                <p>Aug. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/breaking_sky.jpg">
+            <div class="overlay">
+                <h1>Breaking Sky</h1>
+                <p>Oct. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/Joywing_sketch_commission.jpg">
+            <div class="overlay">
+                <h1>Lute Sketch</h1>
+                <p>Mar. 2020</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/Nobukita_commission.jpg" >
+            <div class="overlay">
+                <h1>Nobunaga and Okita</h1>
+                <p>Feb. 2020</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/Lenn_sketch.jpg">
+            <div class="overlay">
+                <h1>Lenn Sketch</h1>
+                <p>Oct. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
             <img src="thumbs/cu_sketch.jpg">
-
-        <img src="thumbs/merlin_chibi.png">
-        <img src="thumbs/mashu_chibi.png">
-        <img src="thumbs/junao_chibi.png">
-        <img src="thumbs/scathach_chibi.png">
-        <img src="thumbs/jeanne_chibi.jpg">
-        <img src="thumbs/jalter_chibi.jpg">
+            <div class="overlay">
+                <h1>Cu Chulainn Sketch</h1>
+                <p>Apr. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/merlin_chibi.png">
+            <div class="overlay">
+                <h1>Merlin Charm</h1>
+                <p>Sept. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/mashu_chibi.png">
+            <div class="overlay">
+                <h1>Mash Kyrielight Charm</h1>
+                <p>Sept. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/junao_chibi.png">
+            <div class="overlay">
+                <h1>Arjuna Alter Charm</h1>
+                <p>Aug. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/scathach_chibi.png">
+            <div class="overlay">
+                <h1>Scathach Charm</h1>
+                <p>Aug. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/jeanne_chibi.jpg">
+            <div class="overlay">
+                <h1>Jeanne d'Arc Charm</h1>
+                <p>Oct. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/jalter_chibi.jpg">
+            <div class="overlay">
+                <h1>Jeanne Alter Charm</h1>
+                <p>Oct. 2019</p>
+            </div>
+        </div>
 
 
     </div> 
    
     <div class="column">
-        <img src="thumbs/through_the_generations.jpg">
-        <img src="thumbs/verdant_tempest.jpg">
-        <img src="thumbs/light_within_the_storm.jpg">
-        <img src="thumbs/sing_with_me.jpg">
-        <img src="thumbs/lenn_render.png">
-        <img src="thumbs/grandmaster_render.png">
-        <img src="thumbs/lake_duo_render.png">
-        <img src="thumbs/giwira_render.png">
-
-        <img src="thumbs/fenrio_render.png">
-        <img src="thumbs/talia_render.png">
-        <img src="thumbs/cadeis_render.png">
-        <img src="thumbs/ryumimi_render.png">
-
     
+        <div class="shadowbox">
+            <img src="thumbs/through_the_generations.jpg">
+            <div class="overlay">
+                <h1>Through the Generations</h1>
+                <p>Oct. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/verdant_tempest.jpg">
+            <div class="overlay">
+                <h1>Verdant Tempest</h1>
+                <p>May. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/light_within_the_storm.jpg">
+            <div class="overlay">
+                <h1>Light Within the Storm</h1>
+                <p>Dec. 2018-2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/sing_with_me.jpg">
+            <div class="overlay">
+                <h1>Sing With Me, One Last Time</h1>
+                <p>May. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/lenn_render.png">
+            <div class="overlay">
+                <h1>Lenn Renders</h1>
+                <p>July-Nov. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/grandmaster_render.png">
+            <div class="overlay">
+                <h1>Aura Grandmaster </h1>
+                <p>May. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/lake_duo_render.png">
+            <div class="overlay">
+                <h1>The Lake Duo</h1>
+                <p>Apr. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+             <img src="thumbs/giwira_render.png">
+            <div class="overlay">
+                <h1>Giwira Render</h1>
+                <p>Jul. 2018</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/fenrio_render.png">
+            <div class="overlay">
+                <h1>Fenrio Render</h1>
+                <p>Jan. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/talia_render.png">
+            <div class="overlay">
+                <h1>Talia Render</h1>
+                <p>Apr. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/cadeis_render.png">
+            <div class="overlay">
+                <h1>Cadeis Render</h1>
+                <p>Apr. 2018</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+             <img src="thumbs/ryumimi_render.png">
+            <div class="overlay">
+                <h1>Ryumimi Render</h1>
+                <p>Nov. 2019</p>
+            </div>
+        </div>
+  
     </div>
   
     <div class="column">
-        <img src="thumbs/nightshade_sentinel.jpg" >
-        <img src="thumbs/shadow_in_the_night.jpg" >
-        <img src="thumbs/door_to_light.jpg">
-
-        <img src="thumbs/michira_soft_shade.jpg" >
-        <img src="thumbs/xiane_fe_style.png" >
-
-        <img src="thumbs/talel_commission.jpg" >
-        <img src="thumbs/rohina_commission.jpg" >
-
-        <img src="thumbs/a_quiet_moment.jpg">
-        <img src="thumbs/mindscape.jpg">
-        <img src="thumbs/alina_sketch.jpg">
+        <div class="shadowbox">
+            <img src="thumbs/nightshade_sentinel.jpg" >
+            <div class="overlay">
+                <h1>The Nightshade Sentinel</h1>
+                <p>Jun. 2019</p>
+            </div>
+        </div>
+  
+        <div class="shadowbox">
+            <img src="thumbs/shadow_in_the_night.jpg" >
+            <div class="overlay">
+                <h1>A Whisper in the Night</h1>
+                <p>Jan. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/door_to_light.jpg">
+            <div class="overlay">
+                <h1>Door to Light</h1>
+                <p>Dec. 2017</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/michira_soft_shade.jpg" >
+            <div class="overlay">
+                <h1>Michira</h1>
+                <p>May. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/xiane_fe_style.png" >
+            <div class="overlay">
+                <h1>Xiane (FE Style)</h1>
+                <p>Jun. 2018</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/talel_commission.jpg" >
+            <div class="overlay">
+                <h1>Tal'el Commission</h1>
+                <p>Feb. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/rohina_commission.jpg" >
+            <div class="overlay">
+                <h1>Rohina Commission</h1>
+                <p>Jan. 2019</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/a_quiet_moment.jpg">
+            <div class="overlay">
+                <h1>A quiet moment</h1>
+                <p>Dec. 2018</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/mindscape.jpg">
+            <div class="overlay">
+                <h1>Mindscape (Inktober)</h1>
+                <p>Oct. 2018</p>
+            </div>
+        </div>
+        
+        <div class="shadowbox">
+            <img src="thumbs/alina_sketch.jpg">
+            <div class="overlay">
+                <h1>Lenn Sketch</h1>
+                <p>Jul. 2018</p>
+            </div>
+        </div>
 
     </div>
 </div>
-
-
-
 </div>
+<!--scripts -->
+<script src="../scripts.js"></script>
 </body>

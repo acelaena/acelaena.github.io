@@ -89,6 +89,24 @@ li{
     overflow: hidden;
     display: none;
 }
+
+.close {
+    color: #aaa;
+    float: right;
+    margin-top: -40pt;
+    margin-bottom: -10pt;
+    font-size: 35pt;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .zoom{
     transform: scale(2.5);
     position: relative;
@@ -116,7 +134,7 @@ li{
     .zoom{
         transform: scale(1);
         position: static;
-
+        margin-top: 20px;
     }
     
 }
