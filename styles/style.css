@@ -4,7 +4,8 @@ body, html{
     margin: 0;
     font-family: "Quicksand", "Open Sans", sans-serif;
     letter-spacing: 1px;
-    background-color: #e8f6ce
+    background-color: #e8f6ce;
+    overflow-x:hidden;
 }
 
 a {color: #18ab29}
