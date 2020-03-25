@@ -28,7 +28,7 @@ div.polaroid-tab {
     z-index: 3;
     height: 90%;
     width: 90%;
-    padding: 30px 30px 90px;
+    padding: 30px 30px 95px;
     margin: 25pt auto;
     border-radius: 20px;
     display: block;
@@ -49,7 +49,7 @@ div.polaroid-tab {
 
 #request {
     height: auto;
-    margin: 5px;
+    margin: 8px;
     float: none;
     font-size: .9em;
     box-sizing: border-box;
