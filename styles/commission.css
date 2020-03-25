@@ -77,6 +77,7 @@ div.polaroid-tab {
         float: left;
         font-size: 1.1em;
         box-sizing: border-box;
+        line-height: 0;
     }
     
     .infobox {padding: 35pt 40pt 75pt;}
