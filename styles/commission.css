@@ -56,7 +56,7 @@ div.polaroid-tab {
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 800px) and (orientation: landscape) /* For Large Screens */
+@media screen and (min-width: 600px) and (orientation: landscape) /* For Large Screens */
 {   
     div.polaroid {
         flex: 30%;

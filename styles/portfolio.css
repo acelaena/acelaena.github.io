@@ -107,7 +107,7 @@
 .art-info {
     position: relative;
     box-sizing: border-box;
-    top: -20%;
+    top: -30%;
     background: rgb(206,206,206);
     background: linear-gradient(0deg, rgba(206,206,206,1) 50%, rgba(206,206,206,.85) 75%, rgba(206,206,206,0) 100%);
     color: #121212;
@@ -123,12 +123,12 @@
     font-size: 2em;
 }
 #desc {
-    font-size: .9em;
+    font-size: .8em;
 }
 
 
-/* Responsive layout - 4 columns for 800px+ */
-@media (min-width: 800px) and (orientation: landscape){
+/* Responsive layout - 4 columns for 600px+ */
+@media (min-width: 600px) and (orientation: landscape){
   
     .column {
       flex: 25%;
