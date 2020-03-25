@@ -61,13 +61,13 @@ div.polaroid-tab {
 @media screen and (min-width: 600px) and (orientation: landscape) /* For Large Screens */
 {   
     div.polaroid {
-        flex: 30%;
+        flex: 32%;
         max-width: 260px;
         margin: 10px;
         box-sizing: border-box;
     }
 
-    div.polaroid-tab {padding: 5% 10%;    }
+    div.polaroid-tab {padding: 5% 10%;}
     
     #request {
         height: 40pt;
