@@ -48,12 +48,13 @@ div.polaroid-tab {
 .infobox img{display: none;}
 
 #request {
-    height: 50px;
-    padding: 12px;
+    height: auto;
     margin: 5px;
     float: none;
     font-size: .9em;
     box-sizing: border-box;
+    width: fit-content;
+    line-height: 1.1;
 }
 
 @media screen and (min-width: 600px) and (orientation: landscape) /* For Large Screens */
