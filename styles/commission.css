@@ -54,7 +54,9 @@ div.polaroid-tab {
     font-size: .9em;
     box-sizing: border-box;
     width: fit-content;
-    line-height: 1.1;
+    line-height: 1;
+    padding: 13px;
+    margin-top: -10px;
 }
 
 @media screen and (min-width: 600px) and (orientation: landscape) /* For Large Screens */
