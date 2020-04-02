@@ -1,9 +1,16 @@
+@font-face{
+    font-family: BlackJack;
+    src: url(../fonts/BLACKJAR.TTF);
+    font-weight: 00;
+}
+
 .header {
     width: 100%;
     background-color: #e8f6ce;
     overflow: hidden;
     position: relative;
     z-index: 0;
+    text-decoration: none;
 }
 
  .header div.left {
@@ -53,11 +60,31 @@
     margin: 0;
     line-height: .8;
     display:block;
+    font-weight: 300;
 }
 .header p {
     margin: 0px;
     display: inline-block;
     font-size: 0.9em;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
 }
 
 @media screen and (min-width: 600px) and (orientation: landscape) /* For Large Screens */
