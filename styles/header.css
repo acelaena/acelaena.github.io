@@ -1,11 +1,10 @@
 @font-face{
     font-family: BlackJack;
     src: url(../fonts/BLACKJAR.TTF);
-    font-weight: 00;
 }
 
 .header {
-    width: 100%;
+    width: 100vw;
     background-color: #e8f6ce;
     overflow: hidden;
     position: relative;
@@ -13,19 +12,19 @@
     text-decoration: none;
 }
 
- .header div.left {
+.header div.left {
     display: block; 
     position: relative;
-    width: 100%;
+    width: 100vw;
     padding-top: 25px;
+    padding-bottom: 10px;
     text-align: center;
 }
 .header div.right{
     display: flex; 
-    width: 100%;
+    width: 100vw;
     position: relative;
     z-index: 2;
-    margin: 0;
 }
 
 .header a{
@@ -35,13 +34,14 @@
     display: inline-block;
     position: relative;
     text-align: center;
-    padding: 6px 0px;
+    padding: 8px 0px;
     transition-duration: 0.3s;
     background-color: #fcfcfc;
-    font-size: .8em;
+    font-size: 12.5px;
     font-weight: 900;
     min-width: fit-content;
 }
+
 .header a:hover, .header a:active {
     position: relative;
     background-color: #cfeacf;
@@ -57,15 +57,13 @@
     font-family: "BlackJack", cursive;
     letter-spacing: 0px;
     font-size: 36pt;
-    margin: 0;
     line-height: .8;
     display:block;
     font-weight: 300;
 }
 .header p {
-    margin: 0px;
     display: inline-block;
-    font-size: 0.9em;
+    font-size: 14.4px;
 }
 
 .sidebar {
@@ -83,25 +81,23 @@
 
 
 #main {
-  transition: margin-left .5s;
+  transition: .5s;
   padding: 16px;
 }
 
 @media screen and (min-width: 600px) and (orientation: landscape) /* For Large Screens */
-{ .header {height: 100px;}
-    
+{ 
+    .header {height: 100px;}
     .header h1 {line-height: 1.1;}
 
     .header a {
         top: -70px;
-        padding: 80px 12px 20px;
-        margin: 0;
-        width: auto;
-        height: 10px; 
+        padding: 80px 12px 8px 12px;
         background-color: #fcfcfc;
         transition-duration: 0.3s;
-        font-size: 1em;
+        font-size: 16px;
         font-weight: 500;
+        
     }
     .header a:hover, .header a:active {top:-50px; border-radius:10px;}
     .header a.first{border-bottom-left-radius: 10px;}
@@ -121,7 +117,6 @@
         top: -110px;
         height: 80px;
         padding-top: 20px;
-        margin: 0;
         width: auto;
         text-align: right;
         margin-right: 4%;

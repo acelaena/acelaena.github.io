@@ -1,19 +1,19 @@
 /*For small screens*/
 div.polaroid {
-    max-width: 100%;
+    max-width: 400px;
+    width: 80vw;
     flex:100%;
     background-color: #ffffff;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    margin-top: 4%;
-    margin-bottom: 2%;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
 }
 
 div.polaroid-tab {
     text-align: left;
     border-radius: 10px;
     padding: 3% 7%;
-    box-sizing: border-box;
 }
 
 .polaroid img{
@@ -26,69 +26,50 @@ div.polaroid-tab {
 .infobox {
     background-color: #ffffff;
     z-index: 3;
-    height: 90%;
-    width: 90%;
+    height: 90vh;
+    width: 90vw;
     padding: 30px 30px 95px;
-    margin: 25pt auto;
+    margin: 5vh auto;
     border-radius: 20px;
     display: block;
-    box-sizing: border-box;
 }
 
 .infocontent {
     z-index: 4;
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    font-size: .9em;
+    overflow-y: auto;
+    font-size: 14.4px;
     display: none;
 }
 
-.infobox img{display: none;}
+.infobox img{width: 150px;  float: right;}
 
 #request {
-    height: auto;
+    height: 40px;
     margin: 8px;
-    float: none;
-    font-size: .9em;
-    box-sizing: border-box;
-    width: fit-content;
-    line-height: 1;
-    padding: 13px;
+    float: left;
+    font-size: 14.4px;
+    line-height: 0;
+    padding: 20px;
 }
 
 @media screen and (min-width: 600px) and (orientation: landscape) /* For Large Screens */
 {   
     div.polaroid {
         flex: 32%;
-        max-width: 260px;
+        max-width: 300px;
         margin: 10px;
-        box-sizing: border-box;
     }
 
     div.polaroid-tab {padding: 5% 10%;}
-    
-    #request {
-        height: 40pt;
-        padding: 18pt;
-        margin: 5pt;
-        margin-left: -5pt;
-        float: left;
-        font-size: 1.1em;
-        box-sizing: border-box;
-        line-height: 0;
-    }
-    
+    #request {font-size: 18px;}
     .infobox {padding: 35pt 40pt 75pt;}
     
     .infobox img{
-        width: 90%;
+        width: 50%;
         max-width: 450px;
-        margin: 0 auto;
-        display: block;
-        float: right;
+        margin-left: 10px;        
     }
-    .polaroid h1 {font-size: 2em;}
 
 }
