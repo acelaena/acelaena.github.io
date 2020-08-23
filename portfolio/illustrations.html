@@ -16,7 +16,7 @@
 
 
 <body>
-<!--Popup zoom -->
+<!--POPUP BOX -->
 <div id="background">
     <div class="artbox">
         <span class="close" onclick="closeArtbox()">&times;</span>
@@ -24,6 +24,7 @@
         <div class="art-info">
             <h1 id="title">Title</h1>
             <p id="tags">#tags</p>
+            <p class="body"> description</p> 
         </div>
     </div>
   
@@ -48,139 +49,178 @@
 </header>
 <!--END HEADER -->
 
-
 <div class="container" style="padding: 0 2%">
-<div class="gallery">
+    
+<!--TAG BAR-->
+<div class="gallery" style="justify-content: flex-start">
  
- <button class="tag">#fanart</button> 
- <button class="tag">#sketches</button>
- <button class="tag">#renders</button>
- <button class="tag">#lined</button>
- <button class="tag">#paintings</button>
- <button class="tag">#traditional_art</button>
- <button class="tag">#chibi</button>
- <button class="tag">#commissions</button>
- <button class="tag">#character_design</button>
- <button class="tag">#MXTX</button>
- <button class="tag">#Fire_Emblem</button>
- <button class="tag">#Fate_Grand_Order</button>
- <button class="tag">#Pokemon</button>
- <button class="tag">#Kingdom_Hearts</button>
- <button class="tag">#Dragalia_Lost</button>
- <button class="tag">#Original_Art</button>
+    <button class="tag" active="false" >#fanart</button> 
+    <button class="tag" active="false">#sketches</button>
+    <button class="tag" active="false">#renders</button>
+    <button class="tag" active="false">#lined</button>
+    <button class="tag" active="false">#paintings</button>
+    <button class="tag" active="false">#traditional_art</button>
+    <button class="tag" active="false">#chibi</button>
+    <button class="tag" active="false">#commissions</button>
+    <button class="tag" active="false">#character_design</button>
+    <button class="tag" active="false">#MXTX</button>
+    <button class="tag" active="false">#Fire_Emblem</button>
+    <button class="tag" active="false">#Fate_Grand_Order</button>
+    <button class="tag" active="false">#Pokemon</button>
+    <button class="tag" active="false">#Kingdom_Hearts</button>
+    <button class="tag" active="false">#Dragalia_Lost</button>
+    <button class="tag" active="false">#Arknights</button>
+    <button class="tag" active="false">#Original_Art</button>
+    <button class="tag" active="false">#11x17_Prints</button>
+    <button class="tag" active="false">#4x6_Prints</button>
+    <button class="tag" active="false">#charms</button>
+    <button class="tag" active="false">#stickers</button>
  
 </div>
+<!--END TAG BAR-->
+    
     <br>
     Please pardon the dust! Gallery still in progress~
-<!--Wide Features -->
-<div class="gallery">
-    <div role="shadowbox" style="background-image: url(thumbs/hua_mulan.jpg)" 
-         onclick="showArtbox('hua_mulan.PNG', 'Hua Mulan','#fanart #paintings #character_design')">
+<div class="gallery" id="gallery" initial="true">
+    
+    <div role="shadowbox" 
+         style="background-image: url(thumbs/hua_mulan.jpg)" 
+         onclick="showArtbox('hua_mulan.PNG', 'Hua Mulan')" 
+         class="fanart paintings character_design 11x17_Prints"
+         caption="One of my favorite disney princesses! Here's my take on Hua Mulan, or better known to me as one of China's most famed warriors in folklore. I decided to go with an outfit style that's more accurate to ancient Chinese robes, but unfortunately 'era accurate' doesn't exist since nobody's sure when she actually lived (or when she lived at all)."
+         >
         <div class="overlay">
             <h1>Hua Mulan</h1>
             <p>Oct. 2019</p>
         </div>
     </div>
 
-    <div role="shadowbox" style="background-image: url(thumbs/fates_intertwined.jpg)">
+    <div role="shadowbox" 
+         style="background-image: url(thumbs/fates_intertwined.jpg)"
+         onclick="showArtbox('fates_intertwined.PNG', 'Fates Intertwined')" 
+         class="fanart paintings 11x17_Prints 4x6_Prints Fire_Emblem"
+         caption="Chrom and Robin, still one of my favorite ships of Fire Emblem history. I struggled a lot with this piece; I have a constant desire to make the colors brighter but bright colors certainly don't suit a battle to save the world."
+         >
         <div class="overlay">
             <h1>Fates Intertwined</h1>
             <p>Jun. 2019</p>
         </div>
     </div>
 
-    <div role="shadowbox" style="background-image: url(thumbs/heart_amongst_the_stars.jpg)">
-       
+    <div role="shadowbox" 
+         style="background-image: url(thumbs/heart_amongst_the_stars.jpg)"
+         onclick="showArtbox('heart_amongst_the_stars.PNG', 'a heart amongst the stars')" 
+         class="Original_Art paintings character_design 11x17_Prints"
+         caption="A tribute to Qinni. She's one of my earliest influencers and among my favorite artists from deviantart. Regretfully when I left dA for a few years I lost track of her, and kind of forgot she existed until I heard the awful news. Rest among the stars, you wonderfully amazing artist."
+         >
         <div class="overlay">
             <h1>a heart amongst the stars</h1>
             <p>Feb. 2020</p>
         </div>
     </div>
 
-    <div role="shadowbox">
-        <img src="thumbs/by_morning_light.png">
+    <div role="shadowbox" 
+         style="background-image: url(thumbs/by_morning_light.png)"
+         onclick="showArtbox('by_morning_light.PNG', 'By Morning Light')" 
+         class="Original_Art paintings character_design 11x17_Prints"
+         caption="Uhh nothing much to say about this other than it was a background exercise that got a little too far when I decided to visit my old art teacher and she told me my backgrounds needed work."
+         >
         <div class="overlay">
             <h1>By Morning Light</h1>
             <p>Feb. 2020</p>
         </div>
     </div>
 
-    <div role="shadowbox">
-        <img src="../images/lined.PNG">
+<!--  4 IMAGES  -->
+    
+    <div role="shadowbox" 
+         style="background-image: url(../images/lined.PNG)"
+         onclick="showArtbox('DL_lenn.PNG', 'Guardian Blade: Lenn')" 
+         class="fanart Dragalia_Lost Original_Art lined character_design charms stickers"
+         caption="Lenn redesigned to fit the world of Dragalia Lost! Drawing in Naoki Saito's style was a real struggle..."
+         >
         <div class="overlay">
             <h1>Guardian Blade: Lenn</h1>
             <p>Feb. 2020</p>
         </div>
     </div>
 
-    <div role="shadowbox">
-        <img src="thumbs/Yuri.jpg">
+    <div role="shadowbox" 
+         style="background-image: url(thumbs/Yuri.jpg)"
+         onclick="showArtbox('Yuri.PNG', 'Yuri Leclerc')" 
+         class="fanart Fire_Emblem sketches character_design 4x6_Prints"
+         caption="I love this man way too much."
+         >
         <div class="overlay">
             <h1>Yuri Leclerc</h1>
             <p>Feb. 2020</p>
         </div>
     </div>
 
-    <div role="shadowbox">
-        <img src="thumbs/Ulric_and_talon_render.png">
+    <div role="shadowbox" 
+         style="background-image: url(thumbs/Ulric_and_talon_render.png)"
+         onclick="showArtbox('Ulric_and_talon_render.PNG', 'Ulric and Talon')" 
+         class="commissions renders"
+         caption="Commission from Dracowolf on Flight Rising, of their characters Ulric and Talon. Ulric is an Asgardian sabertooth rider, and Talon is his mount."
+         >
         <div class="overlay">
             <h1>Ulric and Talon</h1>
             <p>Mar. 2020</p>
         </div>
     </div>
 
-    <div role="shadowbox">
-        <img src="thumbs/Theodas.jpg">
+    <div role="shadowbox" 
+         style="background-image: url(thumbs/Theodas.jpg)"
+         onclick="showArtbox('Theodas.PNG', 'Theodas, Prince of the Seas')" 
+         class="Original_Art commissions renders character_design"
+         caption="A gift for a friend of mine! This is her DnD character, Theodas, a moon elf pirate."
+         >
         <div class="overlay">
             <h1>Theodas, Prince of the Seas</h1>
             <p>Dec. 2019</p>
         </div>
     </div>
+    
+<!--  8 IMAGES  -->
 
-    <div role="shadowbox">
-        <img src="thumbs/Axel_Xiulan_Wang.jpg">
+    <div role="shadowbox" style="background-image: url(thumbs/Axel_Xiulan_Wang.jpg)">
         <div class="overlay">
             <h1>Axel "Xiulan" Wang</h1>
             <p>Dec. 2019</p>
         </div>
     </div>
 
-    <div role="shadowbox">
-        <img src="thumbs/Shinobu_kocho.jpg">
+    <div role="shadowbox" style="background-image: url(thumbs/Shinobu_kocho.jpg)">
         <div class="overlay">
             <h1>Shinobu Kocho</h1>
             <p>Dec. 2019</p>
         </div>
     </div>
 
-    <div role="shadowbox">
-        <img src="thumbs/Moonlit_walk.jpg">
+    <div role="shadowbox" style="background-image: url(thumbs/Moonlit_walk.jpg)">
         <div class="overlay">
             <h1>Moonlit Walk</h1>
             <p>Nov. 2019</p>
         </div>
     </div>
 
-    <div role="shadowbox">
-        <img src="thumbs/Dragon_and_Phoenix.jpg">
+    <div role="shadowbox" style="background-image: url(thumbs/through_the_generations.jpg)" >
         <div class="overlay">
-            <h1>Dragon and the Phoenix</h1>
-            <p>Sept. 2019</p>
+            <h1>Through the Generations</h1>
+            <p>Oct. 2019</p>
         </div>
     </div>
 
+<!--  12 IMAGES  -->
 
-
-    <div role="shadowbox">
-        <img src="thumbs/Dazai_chibi.png">
+    <div role="shadowbox" style="background-image: url(thumbs/Dazai_chibi.png)">
         <div class="overlay">
             <h1>Dazai Osamu Charm</h1>
             <p>Oct. 2019</p>
         </div>
     </div>
 
-    <div role="shadowbox">
-        <img src="thumbs/Chuuya_chibi.png">
+    <div role="shadowbox" style="background-image: url(thumbs/Chuuya_chibi.png)">
         <div class="overlay">
             <h1>Chuuya Nakahara Charm</h1>
             <p>Oct. 2019</p>
@@ -188,148 +228,120 @@
     </div>
     
     
-    
-    
-    
-    
-    
-    
-</div>
- <!--4 column -->
-<div class="gallery"> 
-    <div class="column">
-        
-        
-        
+    <div role="shadowbox" style="background-image: url(thumbs/BH_final.png)">
+        <div class="overlay">
+            <h1>Beast Hunter Book Cover</h1>
+            <p>Nov. 2019</p>
+        </div>
     </div>
-  
-    <div class="column">
-        <div role="shadowbox">
-            <img src="thumbs/BH_final.png">
-            <div class="overlay">
-                <h1>Beast Hunter Book Cover</h1>
-                <p>Nov. 2019</p>
-            </div>
-        </div>
-        
-        <div role="shadowbox">
-            <img src="thumbs/drunken_dream.jpg">
-            <div class="overlay">
-                <h1>Drunken Dream of the Past</h1>
-                <p>Aug. 2019</p>
-            </div>
-        </div>
-        
-        <div role="shadowbox">
-            <img src="thumbs/breaking_sky.jpg">
-            <div class="overlay">
-                <h1>Breaking Sky</h1>
-                <p>Oct. 2019</p>
-            </div>
-        </div>
-        
-        <div role="shadowbox">
-            <img src="thumbs/Joywing_sketch_commission.jpg">
-            <div class="overlay">
-                <h1>Lute Sketch</h1>
-                <p>Mar. 2020</p>
-            </div>
-        </div>
-        
-        <div role="shadowbox">
-            <img src="thumbs/Nobukita_commission.jpg" >
-            <div class="overlay">
-                <h1>Nobunaga and Okita</h1>
-                <p>Feb. 2020</p>
-            </div>
-        </div>
-        
-        <div role="shadowbox">
-            <img src="thumbs/Lenn_sketch.jpg">
-            <div class="overlay">
-                <h1>Lenn Sketch</h1>
-                <p>Oct. 2019</p>
-            </div>
-        </div>
-        
-        <div role="shadowbox">
-            <img src="thumbs/cu_sketch.jpg">
-            <div class="overlay">
-                <h1>Cu Chulainn Sketch</h1>
-                <p>Apr. 2019</p>
-            </div>
-        </div>
-        
-        <div role="shadowbox">
-            <img src="thumbs/merlin_chibi.png">
-            <div class="overlay">
-                <h1>Merlin Charm</h1>
-                <p>Sept. 2019</p>
-            </div>
-        </div>
-        
-        <div role="shadowbox">
-            <img src="thumbs/mashu_chibi.png">
-            <div class="overlay">
-                <h1>Mash Kyrielight Charm</h1>
-                <p>Sept. 2019</p>
-            </div>
-        </div>
-        
-        <div role="shadowbox">
-            <img src="thumbs/junao_chibi.png">
-            <div class="overlay">
-                <h1>Arjuna Alter Charm</h1>
-                <p>Aug. 2019</p>
-            </div>
-        </div>
-        
-        <div role="shadowbox">
-            <img src="thumbs/scathach_chibi.png">
-            <div class="overlay">
-                <h1>Scathach Charm</h1>
-                <p>Aug. 2019</p>
-            </div>
-        </div>
-        
-        <div role="shadowbox">
-            <img src="thumbs/jeanne_chibi.jpg">
-            <div class="overlay">
-                <h1>Jeanne d'Arc Charm</h1>
-                <p>Oct. 2019</p>
-            </div>
-        </div>
-        
-        <div role="shadowbox">
-            <img src="thumbs/jalter_chibi.jpg">
-            <div class="overlay">
-                <h1>Jeanne Alter Charm</h1>
-                <p>Oct. 2019</p>
-            </div>
-        </div>
 
+    <div role="shadowbox" style="background-image: url(thumbs/drunken_dream.jpg)">
+        <div class="overlay">
+            <h1>Drunken Dream of the Past</h1>
+            <p>Aug. 2019</p>
+        </div>
+    </div>
 
-    </div> 
-   
-    <div class="column">
+<!--  16 IMAGES  -->    
     
-        <div role="shadowbox">
-            <img src="thumbs/through_the_generations.jpg">
-            <div class="overlay">
-                <h1>Through the Generations</h1>
-                <p>Oct. 2019</p>
-            </div>
+    <div role="shadowbox" style="background-image: url(thumbs/breaking_sky.jpg)">
+        <div class="overlay">
+            <h1>Breaking Sky</h1>
+            <p>Oct. 2019</p>
         </div>
-        
-        <div role="shadowbox">
-            <img src="thumbs/verdant_tempest.jpg">
-            <div class="overlay">
-                <h1>Verdant Tempest</h1>
-                <p>May. 2019</p>
-            </div>
+    </div>
+
+    <div role="shadowbox" style="background-image: url(thumbs/Joywing_sketch_commission.jpg)">
+        <div class="overlay">
+            <h1>Lute Sketch</h1>
+            <p>Mar. 2020</p>
         </div>
-        
-        <div role="shadowbox">
+    </div>
+
+    <div role="shadowbox" style="background-image: url(thumbs/Nobukita_commission.jpg)">
+        <div class="overlay">
+            <h1>Nobunaga and Okita</h1>
+            <p>Feb. 2020</p>
+        </div>
+    </div>
+
+    <div role="shadowbox" style="background-image: url(thumbs/Lenn_sketch.jpg)">
+        <div class="overlay">
+            <h1>Lenn Sketch</h1>
+            <p>Oct. 2019</p>
+        </div>
+    </div>
+
+<!--  20 IMAGES  -->    
+    
+    <div role="shadowbox" style="background-image: url(thumbs/cu_sketch.jpg)">
+        <div class="overlay">
+            <h1>Cu Chulainn Sketch</h1>
+            <p>Apr. 2019</p>
+        </div>
+    </div>
+
+    <div role="shadowbox" style="background-image: url(thumbs/merlin_chibi.png)">
+        <div class="overlay">
+            <h1>Merlin Charm</h1>
+            <p>Sept. 2019</p>
+        </div>
+    </div>
+
+    <div role="shadowbox" style="background-image: url(thumbs/mashu_chibi.png)">
+        <div class="overlay">
+            <h1>Mash Kyrielight Charm</h1>
+            <p>Sept. 2019</p>
+        </div>
+    </div>
+
+    <div role="shadowbox" style="background-image: url(thumbs/junao_chibi.png)">
+        <div class="overlay">
+            <h1>Arjuna Alter Charm</h1>
+            <p>Aug. 2019</p>
+        </div>
+    </div>
+    
+<!--  24 IMAGES  -->    
+    
+    <div role="shadowbox" style="background-image: url(thumbs/scathach_chibi.png)">
+        <div class="overlay">
+            <h1>Scathach Charm</h1>
+            <p>Aug. 2019</p>
+        </div>
+    </div>
+
+    <div role="shadowbox" style="background-image: url(thumbs/jeanne_chibi.jpg)" >
+        <div class="overlay">
+            <h1>Jeanne d'Arc Charm</h1>
+            <p>Oct. 2019</p>
+        </div>
+    </div>
+
+    <div role="shadowbox" style="background-image: url(thumbs/jalter_chibi.jpg)">
+        <div class="overlay">
+            <h1>Jeanne Alter Charm</h1>
+            <p>Oct. 2019</p>
+        </div>
+    </div>
+
+    <div role="shadowbox" style="background-image: url(thumbs/verdant_tempest.jpg)">
+        <div class="overlay">
+            <h1>Verdant Tempest</h1>
+            <p>May. 2019</p>
+        </div>
+    </div>
+    
+<!-- Hidden From Here -->
+
+     <div hidden="true" role="shadowbox" style="background-image: url(thumbs/Dragon_and_Phoenix.jpg)">
+        <div class="overlay">
+            <h1>Dragon and the Phoenix</h1>
+            <p>Sept. 2019</p>
+        </div>
+    </div>
+
+    <div role="shadowbox">
             <img src="thumbs/light_within_the_storm.jpg">
             <div class="overlay">
                 <h1>Light Within the Storm</h1>
@@ -408,8 +420,12 @@
                 <p>Nov. 2019</p>
             </div>
         </div>
-  
-    </div>
+    
+</div>
+ <!--4 column -->
+<div class="gallery"> 
+ 
+
   
     <div class="column">
         <div role="shadowbox">

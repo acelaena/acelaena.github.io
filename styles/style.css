@@ -1,7 +1,11 @@
 *{
     margin: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 body{
     width: 100vw;
     height: 100vh;
@@ -15,45 +19,39 @@ body{
 a {color: #18ab29}
 sub {line-height: 0; font-weight: 200}
 h1 {font-size: 32px;}
-
-h2 {
-    font-size: 18px;
-    font-weight: 200;
-    margin-bottom: 14px;
-}
-
-h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin: 10px;
-}
+p.body{text-indent: 2em; line-height: 1.45; margin-bottom: 1em;}
+h2 {font-size: 18px; font-weight: 200; margin-bottom: 14px;}
+h3 {font-size: 18px;font-weight: 600;margin: 10px;}
 li {padding-bottom:14px;}
 
 .container {
     padding: 6vh 6vw;    
-    box-sizing: border-box;
     display: flex;
     align-items: flex-start;
     flex-flow: row wrap;
     justify-content: center;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .column{width: 100%; flex: 90%;}
 .column-wide {width:100%;}
 .column-narrow {width:30%; flex:25%;}
 
-/*Front Page*/
-.icon {
-    width: 36px; 
-    padding: 12px 6px 0;
+.close {
+    color: #aaa;
+    font-size: 35pt;
+    font-weight: bold;
+    position: fixed;
+    z-index: 10;
+    top: 5vh;
+    left: calc(95vw - 50px);
+    text-decoration: none; 
+    cursor: pointer;
 }
 
+.close:hover, .close:focus { color: #000; }
 
+/*Front Page*/
+.icon { width: 36px; padding: 12px 6px 0;}
 
 /*Commissions page*/
 .button {
@@ -74,12 +72,11 @@ li {padding-bottom:14px;}
     line-height: 0;
     cursor: pointer;
 }
-
-.button:hover { background-color:#44c767; color: #ffffff; }
+.button:hover { background-color:#44c767; color: #fff; }
 .button:active { position:relative; top:1px; }
 
 #background {
-    background-color: rgb(73, 76, 85, 0.8);
+    background-color: #373a45cc;
     position: fixed;
     z-index: 2;
     height: 100vh;
@@ -88,28 +85,12 @@ li {padding-bottom:14px;}
     display: none;
 }
 
-.close {
-    color: #aaa;
-    font-size: 35pt;
-    font-weight: bold;
-    position: fixed;
-    z-index: 1;
-    top: 5vh;
-    left: calc(95vw - 50px);
-}
-
-.close:hover, .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 div.polaroid {
     max-width: 400px;
     width: 80vw;
     flex:100%;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    box-shadow: 0 4px 6px 0 #0003, 0 6px 10px 0 #0003;
     border-radius: 10px;
     margin-top: 4vh;
     margin-bottom: 2vh;
@@ -129,7 +110,7 @@ div.polaroid-tab {
 }
 
 .infobox {
-    background-color: #ffffff;
+    background-color: #fff;
     z-index: 3;
     height: 90vh;
     width: 90vw;
@@ -164,7 +145,9 @@ div.polaroid-tab {
 @media screen and (min-width: 600px) and (orientation: landscape) /* For Large Screens */
 {   
     body{letter-spacing: 1px;}
-    .column { /* two column spread */
+    
+    /* two column spread */
+    .column { 
         width: 46%;
         padding: 0 2%;
         flex: 50%;
@@ -172,12 +155,7 @@ div.polaroid-tab {
     .column-narrow {width: 20%; flex:25%}
     
     /* Commissions Page */
-    div.polaroid {
-        flex: 32%;
-        max-width: 300px;
-        margin: 10px;
-    }
-
+    div.polaroid { flex: 32%; max-width: 300px; margin: 10px;}
     div.polaroid-tab {padding: 5% 10%;}
     #request {font-size: 18px;}
     .infobox {padding: 35pt 40pt 75pt;}
