@@ -90,13 +90,12 @@ li {padding-bottom:14px;}
 
 .close {
     color: #aaa;
-    float: right;
-    margin-top: -35px;
-    margin-bottom: -10px;
     font-size: 35pt;
     font-weight: bold;
-    position: relative;
+    position: fixed;
     z-index: 1;
+    top: 5vh;
+    left: calc(95vw - 50px);
 }
 
 .close:hover, .close:focus {

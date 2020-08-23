@@ -39,7 +39,7 @@
     box-sizing: border-box;
     bottom: 0;
     background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(0deg, #000e 0%, #0002 100%);
     color: #f1f1f1;
     width: 100%;
     transition: .5s ease;
@@ -48,15 +48,18 @@
 }
 
 .overlay h1{
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 600;
 }
 
 
 .shadowbox:hover .overlay{
     opacity: 1;
-    cursor: pointer;
 }
+.shadowbox:hover {
+    cursor: pointer
+}
+
 
 .tag {
     background-color:#efefef;
@@ -86,6 +89,12 @@
 	background-color:#ffffff;
     color: #0d8533;
     text-shadow:0px 1px 1px #44c767;
+}
+
+#tags{
+    color:#666; 
+    font-size: 0.7em; 
+    margin-bottom:5px;
 }
 
 .artbox {
@@ -118,9 +127,6 @@
     overflow-y: auto;
 }
 
-#title {
-    font-size: 2em;
-}
 #desc {
     font-size: .8em;
 }
@@ -141,11 +147,9 @@
         box-sizing: border-box;
     }
     
-    .overlay h1{font-size: 2.2vw;}   
     
     .tag {font-weight: 400;}
     
-    #title {font-size: 2.2vw;}
     #desc {font-size: inherit;}
     
     .artbox {

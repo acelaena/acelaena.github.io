@@ -22,7 +22,7 @@ function closeArtbox() {
     document.getElementById("background").style.display = "none";
 }
 
-function showArtbox(art, title, description, tags) {
+function showArtbox(art, title, tags) {
 
     "use strict";
     //Set background display
@@ -32,13 +32,9 @@ function showArtbox(art, title, description, tags) {
     var url = "url('../portfolio/gallery/" + art + "')";
     document.getElementById("box").style.backgroundImage = url;
     
-    
     //Set title 
     document.getElementById("title").innerHTML = title;
-    
-    //set description
-    document.getElementById("desc").innerHTML = description;
-    
+        
     //set tags
     document.getElementById("tags").innerHTML = tags;
     

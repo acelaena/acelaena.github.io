@@ -19,12 +19,11 @@
 <!--Popup zoom -->
 <div id="background">
     <div class="artbox">
-        <span class="close" onclick="closeArtbox()" style="margin:0;">&times;</span>
+        <span class="close" onclick="closeArtbox()">&times;</span>
             <div class="art-content" id="box"></div>
         <div class="art-info">
             <h1 id="title">Title</h1>
-            <p id="tags" style="color:#666; font-size: 0.7em; margin-bottom:5px;">#tags</p>
-            <p id="desc" style="overflow: scroll;">description </p>
+            <p id="tags">#tags</p>
         </div>
     </div>
   
@@ -74,9 +73,9 @@
 <!--Wide Features -->
 <div class="gallery">
     <div class="column-wide">
-        <div class="shadowbox" >
-            <img src="thumbs/hua_mulan.jpg">
-            <div class="overlay" onclick="showArtbox('hua_mulan.PNG', 'Hua Mulan', 'One of my favorite disney movies of all time! Here\'s my take on the Dragon Warrior princess, a bit inspired in part by the new live-action Mulan.', '#fanart #paintings #character_design')">
+        <div class="shadowbox" onclick="showArtbox('hua_mulan.PNG', 'Hua Mulan','#fanart #paintings #character_design')">
+            <img src="thumbs/hua_mulan.jpg" >
+            <div class="overlay">
                 <h1>Hua Mulan</h1>
                 <p>Oct. 2019</p>
             </div>
