@@ -112,7 +112,7 @@
 /* Responsive layout - 4 columns for 600px+ */
 @media (min-width: 600px) and (orientation: landscape){
   
-    [role=shadowbox]{ width: 20vw; height: 20vw; max-height: 450px; max-width: 450px;}
+    [role=shadowbox]{width: 20vw; height: 20vw; max-height: 450px; max-width: 450px;}
     .tag {font-weight: 400;}
         
     .artbox {
@@ -121,10 +121,5 @@
         padding: 3vh 0;
         margin: 0 5vw;
     }
-
-    .art-info {
-        height: 27.5vh;
-        margin: 0 -5vw;
-
-    }
+    .art-info {height: 27.5vh; margin: 0 -5vw;}
 }
