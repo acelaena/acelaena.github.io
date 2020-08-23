@@ -10,8 +10,8 @@
 [role=shadowbox]{
     position: relative;
     flex: 50%;
-    width: 50vw;
-    height: 50vw;
+    width: 40vw;
+    height: 40vw;
     max-width: 400px;
     max-height: 400px;
     margin: 3px;
@@ -114,7 +114,7 @@
 /* Responsive layout - 4 columns for 600px+ */
 @media (min-width: 600px) and (orientation: landscape){
   
-    .shadowbox{flex: 25%; width: 25vw; height: 25vw;}
+    .shadowbox{flex: 25%; width: 20vw; height: 20vw;}
     .tag {font-weight: 400;}
         
     .artbox {
