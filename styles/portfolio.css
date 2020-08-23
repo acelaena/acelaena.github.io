@@ -1,44 +1,31 @@
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  width: 100%;
-}
-
-/* 2 column for small screens*/
-.column {
-    flex: 50%;
-    max-width: 50%;
-    padding: 0 0.25%;
+    display: flex;
+    flex-wrap: wrap;
     box-sizing: border-box;
+    justify-content: center;
+    width: 100vw;
 }
 
-.column img {
-  margin-top: 2%;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.column-wide {
-    flex: 100%;
-    max-width: 100%;
-    padding: 0 0.5%;
-    box-sizing: border-box;
-}
-.column-wide img {
-  margin-top: 2%;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.shadowbox{
+[role=shadowbox]{
     position: relative;
+    flex: 50%;
+    width: 50vw;
+    height: 50vw;
+    max-width: 400px;
+    max-height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 3px;
+    
 }
+
+[role=shadowbox]:hover {cursor: pointer}
+
 .overlay{
     position: absolute;
-    box-sizing: border-box;
     bottom: 0;
-    background: rgb(0,0,0);
+    background: #000;
     background: linear-gradient(0deg, #000e 0%, #0002 100%);
     color: #f1f1f1;
     width: 100%;
@@ -47,18 +34,14 @@
     padding: 10% 8% 4%;
 }
 
+[role=shadowbox]:hover .overlay{opacity: 1;}
+
 .overlay h1{
     font-size: 1.6em;
     font-weight: 600;
 }
 
 
-.shadowbox:hover .overlay{
-    opacity: 1;
-}
-.shadowbox:hover {
-    cursor: pointer
-}
 
 
 .tag {
@@ -135,11 +118,22 @@
 /* Responsive layout - 4 columns for 600px+ */
 @media (min-width: 600px) and (orientation: landscape){
   
+/*
     .column {
       flex: 25%;
       max-width: 25%;
     }
+*/
     
+
+    .shadowbox{
+        flex: 25%;
+        width: 25vw;
+        height: 25vw;
+    }
+    
+
+/*
     .column-wide {
         flex: 50%;
         max-width: 50%;
@@ -147,6 +141,7 @@
         box-sizing: border-box;
     }
     
+*/
     
     .tag {font-weight: 400;}
     
