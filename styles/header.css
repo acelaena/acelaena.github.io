@@ -85,7 +85,8 @@
   padding: 16px;
 }
 
-@media screen and (min-width: 600px) and (orientation: landscape) /* For Large Screens */
+/* For Large Screens */
+@media screen and (min-width: 600px) and (orientation: landscape) 
 { 
     .header {height: 100px;}
     .header h1 {line-height: 1.1;}

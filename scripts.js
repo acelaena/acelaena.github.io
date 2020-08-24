@@ -1,7 +1,7 @@
 "use strict";
 
 
-/*Open-close popup script*/
+/*Commissions page popup script*/
 function popup(id) {
 
     var element = document.getElementById(id);
@@ -19,11 +19,13 @@ function closePopup() {
     document.getElementById("painted").style.display = "none";
 }
 
+
+/*Portflio page popup script*/
 function closeArtbox() {
     document.getElementById("background").style.display = "none";
 }
 
-function showArtbox(art, title, tags) {
+function showArtbox(ele, art, title) {
 
     //Set background display
     document.getElementById("background").style.display = "block";
@@ -36,5 +38,14 @@ function showArtbox(art, title, tags) {
     document.getElementById("title").innerHTML = title;
         
     //set tags
+    var taglist = ele.className.replace(/ /g, " #");
+    taglist = '#' + taglist;
+    document.getElementById("tags").innerHTML = taglist;
+    
+    //set description
+    var desc = ele.getAttribute("caption");
+    document.getElementById("desc").innerHTML = desc;
     
 }
+
+/*Portfolio page tag script*/
