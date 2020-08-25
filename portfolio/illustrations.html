@@ -64,27 +64,26 @@
 <!--TAG BAR-->
 <div class="gallery" style="justify-content: flex-start">
  
-    <button class="tag" active="false" >#fanart</button> 
-    <button class="tag" active="false">#sketches</button>
-    <button class="tag" active="false">#renders</button>
-    <button class="tag" active="false">#lined</button>
-    <button class="tag" active="false">#paintings</button>
-    <button class="tag" active="false">#traditional_art</button>
-    <button class="tag" active="false">#chibi</button>
-    <button class="tag" active="false">#commissions</button>
-    <button class="tag" active="false">#character_design</button>
-    <button class="tag" active="false">#MXTX</button>
-    <button class="tag" active="false">#Fire_Emblem</button>
-    <button class="tag" active="false">#Fate_Grand_Order</button>
-    <button class="tag" active="false">#Pokemon</button>
-    <button class="tag" active="false">#Kingdom_Hearts</button>
-    <button class="tag" active="false">#Dragalia_Lost</button>
-    <button class="tag" active="false">#Arknights</button>
-    <button class="tag" active="false">#Original_Art</button>
-    <button class="tag" active="false">#11x17_Prints</button>
-    <button class="tag" active="false">#4x6_Prints</button>
-    <button class="tag" active="false">#charms</button>
-    <button class="tag" active="false">#stickers</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#fanart</button> 
+    <button class="tag" active="false" onclick="toggleTag(this)">#sketches</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#renders</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#lined</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#paintings</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#chibi</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#commissions</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#character_design</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#MXTX</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#Fire_Emblem</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#Fate_Grand_Order</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#Pokemon</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#Kingdom_Hearts</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#Dragalia_Lost</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#Arknights</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#original_art</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#11x17_prints</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#4x6_prints</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#charms</button>
+    <button class="tag" active="false" onclick="toggleTag(this)">#stickers</button>
  
 </div>
 <!--END TAG BAR-->
@@ -93,10 +92,10 @@
     Please pardon the dust! Gallery still in progress~
 <div class="gallery" id="gallery" initial="true">
     
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/hua_mulan.jpg)" 
          onclick="showArtbox(this, 'hua_mulan.PNG', 'Hua Mulan')" 
-         class="fanart paintings character_design 11x17_Prints 4x6_Prints"
+         class="fanart paintings character_design 11x17_prints 4x6_prints"
          caption="One of my favorite disney princesses! Here's my take on Hua Mulan, or better known to me as one of China's most famed warriors in folklore. I decided to go with an outfit style that's more accurate to ancient Chinese robes, but unfortunately 'era accurate' doesn't exist since nobody's sure when she actually lived (or when she lived at all)."
          >
         <div class="overlay">
@@ -105,10 +104,10 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/fates_intertwined.jpg)"
          onclick="showArtbox(this, 'fates_intertwined.PNG', 'Fates Intertwined')" 
-         class="fanart paintings 11x17_Prints 4x6_Prints Fire_Emblem"
+         class="fanart paintings 11x17_prints 4x6_prints Fire_Emblem"
          caption="Chrom and Robin, still one of my favorite ships of Fire Emblem history. I struggled a lot with this piece; I have a constant desire to make the colors brighter but bright colors certainly don't suit a battle to save the world."
          >
         <div class="overlay">
@@ -117,10 +116,10 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/heart_amongst_the_stars.jpg)"
          onclick="showArtbox(this, 'heart_amongst_the_stars.PNG', 'a heart amongst the stars')" 
-         class="Original_Art paintings character_design 11x17_Prints 4x6_Prints"
+         class="original_art paintings character_design 11x17_prints 4x6_prints"
          caption="A tribute to Qinni. She's one of my earliest influencers and among my favorite artists from deviantart. Regretfully when I left dA for a few years I lost track of her, and kind of forgot she existed until I heard the awful news. Rest among the stars, you wonderfully amazing artist."
          >
         <div class="overlay">
@@ -129,10 +128,10 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/by_morning_light.png)"
          onclick="showArtbox(this, 'by_morning_light.PNG', 'By Morning Light')" 
-         class="Original_Art paintings character_design 11x17_Prints 4x6_Prints"
+         class="original_art paintings character_design 11x17_prints 4x6_prints"
          caption="Uhh nothing much to say about this other than it was a background exercise that got a little too far when I decided to visit my old art teacher and she told me my backgrounds needed work. As for what this piece is about, it's a little bit of a time twist-- it's an older, slight redesign of Alina here, but the scenery is the Silverfall Highlands, before it fell to the void."
          >
         <div class="overlay">
@@ -143,10 +142,10 @@
 
 <!--  4 IMAGES  -->
     
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(../images/lined.PNG)"
          onclick="showArtbox(this, 'DL_lenn.PNG', 'Guardian Blade: Lenn')" 
-         class="fanart Dragalia_Lost Original_Art lined character_design charms stickers"
+         class="fanart Dragalia_Lost original_art lined character_design charms stickers"
          caption="Lenn redesigned to fit the world of Dragalia Lost! Drawing in Naoki Saito's style was a real struggle..."
          >
         <div class="overlay">
@@ -155,10 +154,10 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/Yuri.jpg)"
          onclick="showArtbox(this, 'Yuri.PNG', 'Yuri Leclerc')" 
-         class="fanart Fire_Emblem sketches character_design 4x6_Prints"
+         class="fanart Fire_Emblem sketches character_design 4x6_prints"
          caption="I love this man way too much."
          >
         <div class="overlay">
@@ -167,7 +166,7 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/Ulric_and_talon_render.png)"
          onclick="showArtbox(this, 'Ulric_and_talon_render.PNG', 'Ulric and Talon')" 
          class="commissions renders"
@@ -179,10 +178,10 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/Theodas.jpg)"
          onclick="showArtbox(this, 'Theodas.PNG', 'Theodas, Prince of the Seas')" 
-         class="Original_Art commissions paintings character_design"
+         class="original_art commissions paintings character_design"
          caption="A gift for a friend of mine! This is her DnD character, Theodas, a moon elf pirate and the heir of an island nation."
          >
         <div class="overlay">
@@ -193,10 +192,10 @@
     
 <!--  8 IMAGES  -->
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/Axel_Xiulan_Wang.jpg)"
          onclick="showArtbox(this, 'Axel_Xiulan_Wang.PNG', 'Axel \'Xiulan\' Wang')" 
-         class="Original_Art paintings character_design commissions Fate_Grand_Order"
+         class="original_art paintings character_design commissions Fate_Grand_Order"
          caption="A gift for Kyaasuu on Twitter! Their character, pyromaniac Axel, in Caster Cu's outfit from FGO. "
          >
         <div class="overlay">
@@ -205,10 +204,10 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/Shinobu_kocho.jpg)"
          onclick="showArtbox(this, 'Shinobu_kocho.PNG', 'Shinobu Kocho')" 
-         class="fanart paintings 4x6_Prints"
+         class="fanart paintings 4x6_prints"
          caption="One of my favorite characters from Demon Slayer/Kimetsu no Yaiba! I love her graceful movements and soft colors, but her hair and eyes were a real pain to draw.">
         <div class="overlay">
             <h1>Shinobu Kocho</h1>
@@ -216,10 +215,10 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/Moonlit_walk.jpg)"
          onclick="showArtbox(this, 'Moonlit_walk.PNG', 'Moonlit Walk')" 
-         class="fanart Pokemon Original_Art paintings 4x6_Prints"
+         class="fanart Pokemon original_art paintings 4x6_prints"
          caption="A gift to a longtime watcher! Her OC, Lilliana, a ninetales/zoroark/umbreon mix.">
         <div class="overlay">
             <h1>Moonlit Walk</h1>
@@ -227,10 +226,10 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/through_the_generations.jpg)" 
          onclick="showArtbox(this, 'through_the_generations.PNG', 'Through the Generations')" 
-         class="fanart Kingdom_Hearts paintings 11x17_Prints 4x6_Prints"
+         class="fanart Kingdom_Hearts paintings 11x17_prints 4x6_prints"
          caption="A memorial of the past, present, and future of Kingdom Hearts.">
         <div class="overlay">
             <h1>Through the Generations</h1>
@@ -240,10 +239,10 @@
 
 <!--  12 IMAGES  -->
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/Dazai_chibi.png)"
          onclick="showArtbox(this, 'Dazai_chibi.PNG', 'Dazai Osamu Charm')" 
-         class="fanart chibi charms stickers"
+         class="fanart chibi charms stickers lined"
          caption="Everyone's favorite suicide maniac, Dazai. ">
         <div class="overlay">
             <h1>Dazai Osamu Charm</h1>
@@ -251,10 +250,10 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/Chuuya_chibi.png)"
          onclick="showArtbox(this, 'Chuuya_chibi.PNG', 'Chuuya Nakahara Charm')" 
-         class="fanart chibi charms stickers"
+         class="fanart chibi charms stickers lined"
          caption="The one and only, smug chibi ginger."
          >
         <div class="overlay">
@@ -264,10 +263,10 @@
     </div>
     
     
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/BH_final.png)"
          onclick="showArtbox(this, 'BH_final.PNG', 'Beast Hunter Book Cover')" 
-         class="Original_Art fanart paintings character_design book_cover_design"
+         class="original_art fanart paintings book_cover_design"
          caption="A design project from college. Said project was to design a book cover for your favorite book. I chose a book by a fanfiction author I follow, and my professor denied that because the existing cover wasn't professionally designed and the book was relatively unknown. So, out of spite, I lied, and did a work-in-progress story by my friend Kyaasuu. (go give them a follow on AO3 and twitter!) <br><br> It's an original story about a beast hunter, Riley, as he tangles with a threat far greater than he signed up for, Axel, a pyromaniac godslayer cursed to live on the brink of death, and Ori, a traumatized ex-demon hunter who's too tired of everyone's shit."
          >
         <div class="overlay">
@@ -276,10 +275,10 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/drunken_dream.jpg)"
          onclick="showArtbox(this, 'drunken_dream.PNG', 'Drunken Dream of the Past')" 
-         class="fanart MXTX 11x17_Prints paintings 4x6_Prints"
+         class="fanart MXTX 11x17_prints paintings lined 4x6_prints"
          caption="Two of my favorite disaster gays! This is sort of a 'what if' piece-- what if Yiling Laozu!Wei Wuxian went with Lan Wangji to Gusu? It's a bit of a blend of their younger and older looks."
          >
         <div class="overlay">
@@ -290,7 +289,7 @@
 
 <!--  16 IMAGES  -->    
     
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/breaking_sky.jpg)"
          onclick="showArtbox(this, 'breaking_sky.PNG', 'Breaking Sky')" 
          class="Original Art paintings Character_Design renders 4x6 prints "
@@ -301,10 +300,10 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/Joywing_sketch_commission.jpg)"
          onclick="showArtbox(this, 'Joywing_sketch_commission.PNG', 'Lute Sketch')" 
-         class="fanart commission sketch"
+         class="fanart commission sketches"
          caption="Commission from Joywing on Flight Rising of their dragon Lute."
          >
         <div class="overlay">
@@ -313,10 +312,10 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/Nobukita_commission.jpg)"
          onclick="showArtbox(this, 'Nobukita_commission.PNG', 'Nobunaga and Okita')" 
-         class="fanart commission sketch character_design Fate_Grand_Order"
+         class="fanart commission sketches character_design Fate_Grand_Order"
          caption="Washija! Nobbu and modern reincarnated Okki, reunited hundreds of years later in a grail war DnD RP. Commission from Xairathan on Flight Rising.">
         <div class="overlay">
             <h1>Nobunaga and Okita</h1>
@@ -324,10 +323,10 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/Lenn_sketch.jpg)"
          onclick="showArtbox(this, 'Lenn_sketch.PNG', 'Lenn Sketch')" 
-         class="Original_Art sketch character_design"
+         class="original_art sketches character_design"
          caption="Quick doodle of Lenn in casual clothes.">
         <div class="overlay">
             <h1>Lenn Sketch</h1>
@@ -337,10 +336,10 @@
 
 <!--  20 IMAGES  -->    
     
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/cu_sketch.jpg)"
          onclick="showArtbox(this, 'cu_sketch.PNG', 'Cu Chulainn Sketch')" 
-         class="fanart Fate_Grand_Order sketch"
+         class="fanart Fate_Grand_Order sketches"
          caption="Request from TheTokenBrit and Kyaasuu! Doggo lancer, Cu chulainn.">
         <div class="overlay">
             <h1>Cu Chulainn Sketch</h1>
@@ -348,10 +347,10 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/merlin_chibi.png)"
          onclick="showArtbox(this, 'merlin_chibi.PNG', 'Merlin Charm')" 
-         class="fanart Fate_Grand_Order chibi charms stickers"
+         class="fanart Fate_Grand_Order chibi charms stickers lined"
          caption="Merlin charm! Bastard dick wizard but I love him">
         <div class="overlay">
             <h1>Merlin Charm</h1>
@@ -359,10 +358,10 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/mashu_chibi.png)"
          onclick="showArtbox(this, 'mashu_chibi.PNG', 'Mash Kyrielight Charm')" 
-         class="fanart Fate_Grand_Order chibi charms stickers"
+         class="fanart Fate_Grand_Order chibi charms stickers lined"
          caption="shield kouhai <3">
         <div class="overlay">
             <h1>Mash Kyrielight Charm</h1>
@@ -370,10 +369,10 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/junao_chibi.png)"
          onclick="showArtbox(this, 'junao_chibi.PNG', 'Arjuna Alter Charm')" 
-         class="fanart Fate_Grand_Order charms chibi stickers"
+         class="fanart Fate_Grand_Order charms chibi stickers lined"
          caption="Arjuna Alter! The world knows him as Junao, Godjuna, or Alterjuna, I know him as the dumb cat boy who vored the gods on accident. "
          >
         <div class="overlay">
@@ -384,10 +383,10 @@
     
 <!--  24 IMAGES  -->    
     
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/scathach_chibi.png)"
          onclick="showArtbox(this, 'scathach_chibi.PNG', 'Scathach Charm')" 
-         class="fanart Fate_Grand_Order chibi charms stickers"
+         class="fanart Fate_Grand_Order chibi charms stickers lined"
          caption="Shishou lancer!">
         <div class="overlay">
             <h1>Scathach Charm</h1>
@@ -395,10 +394,10 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/jeanne_chibi.jpg)" 
          onclick="showArtbox(this, 'jeanne_chibi.PNG', 'Jeanne d'Arc Charm')" 
-         class="fanart Fate_Grand_Order chibi charms stickers"
+         class="fanart Fate_Grand_Order chibi charms stickers lined"
          caption="White bread~ A singular charm with her Alter counterpart.">
         <div class="overlay">
             <h1>Jeanne d'Arc Charm</h1>
@@ -406,18 +405,18 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/jalter_chibi.jpg)"
          onclick="showArtbox(this, 'jalter_chibi.PNG', 'Jeanne Alter Charm')" 
-         class="fanart Fate_Grand_Order chibi charms stickers"
-         caption="Aand burnt bread. Backside of the Jeannu charm.">
+         class="fanart Fate_Grand_Order chibi charms stickers lined"
+         caption="Aand burnt bread. Backside of the Jeannu charm. ">
         <div class="overlay">
             <h1>Jeanne Alter Charm</h1>
             <p>Oct. 2019</p>
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/verdant_tempest.jpg)"
          onclick="showArtbox(this, 'verdant_tempest.PNG', 'Verdant Tempest')" 
          class="fanart Pokemon paintings 11x17_print 4x6_print"
@@ -429,19 +428,22 @@
     </div>
     
 <!-- Hidden From Here -- REMOVE DIV HIDDEN-->
-<div hidden=true> 
+    
     <div role="shadowbox" hidden="true"
          style="background-image: url(thumbs/Dragon_and_Phoenix.jpg)"   
          onclick="showArtbox(this, 'Dragon_and_Phoenix.PNG', 'Dragon and the Phoenix')" 
-         class="character_design sketch"
+         class="character_design sketches"
          caption="Quick character design doodles. Might revisit them someday.">
         <div class="overlay">
             <h1>Dragon and the Phoenix</h1>
             <p>Sept. 2019</p>
         </div>
     </div>
+    
+<div hidden=true> 
+    
 
-    <div role="shadowbox"
+    <div role="shadowbox" hidden="true"
          style="background-image: url(thumbs/Dragon_and_Phoenix.jpg)"   
          onclick="showArtbox(this, 'Dragon_and_Phoenix.PNG', 'Dragon and the Phoenix')" 
          class="character_design sketch"
@@ -453,7 +455,7 @@
             </div>
     </div>
         
-    <div role="shadowbox"
+    <div role="shadowbox" hidden="true"
          style="background-image: url(thumbs/Dragon_and_Phoenix.jpg)" 
          onclick="showArtbox(this, 'Dragon_and_Phoenix.PNG', 'title')" 
          class="character_design sketch"
@@ -466,7 +468,7 @@
             </div>
     </div>
         
-    <div role="shadowbox" 
+    <div role="shadowbox"  hidden="true"
          style="background-image: url(thumbs/Dragon_and_Phoenix.jpg)" 
          onclick="showArtbox(this, 'Dragon_and_Phoenix.PNG', 'title')" 
          class="character_design sketch"
@@ -478,7 +480,7 @@
             </div>
     </div>
         
-    <div role="shadowbox"
+    <div role="shadowbox" hidden="true"
          style="background-image: url(thumbs/Dragon_and_Phoenix.jpg)" 
          onclick="showArtbox(this, 'Dragon_and_Phoenix.PNG', 'title')" 
          class="character_design sketch"
@@ -491,7 +493,7 @@
         </div>
     </div>
 
-    <div role="shadowbox"
+    <div role="shadowbox" hidden="true"
          style="background-image: url(thumbs/Dragon_and_Phoenix.jpg)" 
          onclick="showArtbox(this, 'Dragon_and_Phoenix.PNG', 'title')" 
          class="character_design sketch"
@@ -504,7 +506,7 @@
         </div>
     </div>
 
-    <div role="shadowbox"
+    <div role="shadowbox" hidden="true"
          style="background-image: url(thumbs/Dragon_and_Phoenix.jpg)" 
          onclick="showArtbox(this, 'Dragon_and_Phoenix.PNG', 'title')" 
          class="character_design sketch"
@@ -517,7 +519,7 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox"  hidden="true"
          style="background-image: url(thumbs/Dragon_and_Phoenix.jpg)" 
          onclick="showArtbox(this, 'Dragon_and_Phoenix.PNG', 'title')" 
          class="character_design sketch"
@@ -530,7 +532,7 @@
         </div>
     </div>
 
-    <div role="shadowbox"
+    <div role="shadowbox" hidden="true"
          style="background-image: url(thumbs/Dragon_and_Phoenix.jpg)" 
          onclick="showArtbox(this, 'Dragon_and_Phoenix.PNG', 'title')" 
          class="character_design sketch"
@@ -543,7 +545,7 @@
         </div>
     </div>
 
-    <div role="shadowbox"
+    <div role="shadowbox" hidden="true"
          style="background-image: url(thumbs/Dragon_and_Phoenix.jpg)" 
          onclick="showArtbox(this, 'Dragon_and_Phoenix.PNG', 'title')" 
          class="character_design sketch"
@@ -556,7 +558,7 @@
         </div>
     </div>
 
-    <div role="shadowbox" 
+    <div role="shadowbox"  hidden="true"
          style="background-image: url(thumbs/Dragon_and_Phoenix.jpg)" 
          onclick="showArtbox(this, 'Dragon_and_Phoenix.PNG', 'title')" 
          class="character_design sketch"

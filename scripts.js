@@ -49,3 +49,48 @@ function showArtbox(ele, art, title) {
 }
 
 /*Portfolio page tag script*/
+function toggleImages(t, show) {
+    var item, i;
+    if (document.getElementById("gallery").getAttribute("initial") === "true") {
+        document.getElementById("gallery").setAttribute("initial", "false");
+        
+        //hide all
+        var viewable = document.querySelectorAll('[hidden="false"]');
+        for (i = 0; i < viewable.length; i++) {
+            item = viewable[i];
+            item.setAttribute("hidden", "true");
+        }
+    }
+    //then show or hide all with current tag
+    
+    var toToggle = document.getElementsByClassName(t);
+    if (show) { //show
+        for (i = 0; i < toToggle.length; i++) {
+            item = toToggle[i];
+            item.setAttribute("hidden", "false");
+        }
+    } else { //hide
+        for (i = 0; i < toToggle.length; i++) {
+            item = toToggle[i];
+            item.setAttribute("hidden", "true");
+        }
+    }
+    
+}
+
+function toggleTag(ele) {
+    var status;
+    if (ele.getAttribute("active") === "false") {
+        ele.setAttribute("active", "true");
+        status = true;
+    } else {
+        ele.setAttribute("active", "false");
+        status = false;
+    }
+    
+    var tag = ele.innerText;
+    tag = tag.replace('#', '');
+    
+    toggleImages(tag, status);
+}
+
