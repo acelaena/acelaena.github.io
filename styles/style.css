@@ -148,7 +148,7 @@ div.polaroid-tab {
     display: none;
 }
 
-.infobox img{width: 240px;  float: right;}
+.infobox img{width: 220px;  float: right;}
 
 #request {
     height: 50px;
@@ -157,7 +157,7 @@ div.polaroid-tab {
     float: left;
     font-size: 12px;
     line-height: 1;
-    padding: 10px 14px;
+    padding: 10px 20px;
     word-wrap: break-word;
     text-decoration: none;
 }
