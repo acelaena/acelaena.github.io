@@ -15,9 +15,8 @@
     height: 94vw;
     min-width: 250px;
     min-height: 250px;
-    margin: 10px 0;
-    display: block;
-    
+    margin: 8px 0;
+    display: block;   
 }
 
 .overlay{
@@ -28,7 +27,7 @@
     color: #f1f1f1;
     width: 100%;
     transition: .5s ease;
-    opacity: 0;
+    opacity: 0.7;
     padding: 10% 8% 4%;
 }
 .overlay h1{ font-size: 1.6em; font-weight: 600;}
@@ -107,16 +106,12 @@
      [role=shadowbox]{max-height: 500px; max-width: 500px; margin: 2px;}
     .tag {
         font-weight: 400;
-        background-color:#efefef;
-        border-radius: 5px;
-        border: none;
-        transition-duration: 0.2s;
-        color:#888888;
         padding: 8px;
         font-size: .9em;
-        margin: 2px;
-        font-family: inherit;
     }
+    
+    .overlay{opacity: 0;}
+    
 }
 
 /* 2 col, 600-777px */
