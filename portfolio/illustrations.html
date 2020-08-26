@@ -62,8 +62,10 @@
 <div class="container" style="padding: 0 1vw">
     
 <!--TAG BAR-->
-<div class="gallery" style="justify-content: flex-start">
- 
+    
+<div class="gallery" style="justify-content: flex-start; padding-top: 50px;">
+    
+    <p style="width: 100%; text-indent: 80px; color: #666">Filter by tags: </p>
     <button class="tag" active="false" onclick="toggleTag(this)">#fanart</button> 
     <button class="tag" active="false" onclick="toggleTag(this)">#original_art</button>
     <button class="tag" active="false" onclick="toggleTag(this)">#sketches</button>
@@ -85,6 +87,7 @@
     <button class="tag" active="false" onclick="toggleTag(this)">#4x6_prints</button>
     <button class="tag" active="false" onclick="toggleTag(this)">#charms</button>
     <button class="tag" active="false" onclick="toggleTag(this)">#stickers</button>
+    <button class="tag" active="false" onclick="showAll(this)"> <b>[Show All]</b></button> 
  
 </div>
 <!--END TAG BAR-->
@@ -218,16 +221,7 @@
         </div>
     </div>
 
-    <div role="shadowbox" hidden="false"
-         style="background-image: url(thumbs/Moonlit_walk.jpg)"
-         onclick="showArtbox(this, 'Moonlit_walk.PNG', 'Moonlit Walk')" 
-         class="fanart Pokemon commissions original_art paintings 4x6_prints"
-         caption="A gift to a longtime watcher! Her OC, Lilliana, a ninetales/zoroark/umbreon mix.">
-        <div class="overlay">
-            <h1>Moonlit Walk</h1>
-            <p>Nov. 2019</p>
-        </div>
-    </div>
+    
 
     <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/through_the_generations.jpg)" 
@@ -240,7 +234,7 @@
         </div>
     </div>
 
-<!--  12 IMAGES  -->
+
     <div role="shadowbox" hidden="false"
         style="background-image: url(thumbs/fotia.jpg)"
         onclick="showArtbox(this, 'fotia.PNG', '[F O T I A]')"
@@ -252,6 +246,8 @@
             <p>May 2020<p>
         </div>
     </div>
+    
+    <!--  12 IMAGES  -->
     
     <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/BH_final.jpg)"
@@ -277,24 +273,14 @@
         </div>
     </div>
     
-    <div role="shadowbox" hidden="false"
-        style="background-image: url(thumbs/stardust.jpg)"
-        onclick="showArtbox(this, 'stardust.PNG', 'Stardust')"
-        class="paintings original_art"
-        caption="A background I speedpainted for a design class. Available as a wallpaper download, check the downloads section of my portfolio!"
-        >
-        <div class="overlay">
-            <h1>Stardust</h1>
-            <p>Apr 2020<p>
-        </div>
-    </div>
     
-<!--  16 IMAGES  -->    
+    
+ 
     
     <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/breaking_sky.jpg)"
          onclick="showArtbox(this, 'breaking_sky.PNG', 'Breaking Sky')" 
-         class="Original Art paintings Character_Design renders 4x6 prints "
+         class="Original Art paintings Character_Design renders 4x6 prints Pokemon"
          caption="A pretty spoiler-y art of Project Shrouded Kingdom for me to be posting but I'm proud of the (character) art nonetheless. This actually took me nine months, because I couldn't settle on a background I liked, and I still don't quite like the background right now. This art is something of a transitional phase of when I was just starting to try my painted style, while still trying to stick to my old hyper-sharp rendered style.">
         <div class="overlay">
             <h1>Breaking Sky</h1>
@@ -302,17 +288,7 @@
         </div>
     </div>
 
-    <div role="shadowbox" hidden="false"
-        style="background-image: url(thumbs/wangxian_bunnies.jpg)"
-        onclick="showArtbox(this, 'wangxian_bunnies.PNG', 'Wangxian Bunnies')"
-        class="fanart MXTX sketches stickers charms"
-        caption="Yes, these bunnies are available as separate charms but... DO NOT SEPARATE. "
-        >
-        <div class="overlay">
-            <h1>Wangxian Bunnies</h1>
-            <p>Jan 2020<p>
-        </div>
-    </div>
+  
     
     <div role="shadowbox" hidden="false"
          style="background-image: url(../images/lined.PNG)"
@@ -326,19 +302,10 @@
         </div>
     </div>
     
-    <div role="shadowbox" hidden="false"
-        style="background-image: url(thumbs/sing_with_me.jpg)"
-        onclick="showArtbox(this, 'sing_with_me.PNG', 'Sing With Me, One Last Time')"
-        class="fanart Fire_Emblem lined paintings 4x6_prints"
-        caption="Painted this on a plane/bus trip to New York! Fates may not be my favorite FE game, but Azura is one of my favorite FE characters <3"
-        >
-        <div class="overlay">
-            <h1>Sing With Me, One Last Time</h1>
-            <p>May 2019<p>
-        </div>
-    </div>
-
-<!--  20 IMAGES  -->    
+    <!--  16 IMAGES  -->   
+    
+   
+ 
     <div role="shadowbox" hidden="false"
         style="background-image: url(thumbs/rose_pride.jpg)"
         onclick="showArtbox(this, 'rose_pride.PNG', 'Pride Icon: Rose')"
@@ -373,26 +340,39 @@
             <h1>Pride Icon: Lenn</h1>
             <p>Jun 2020<p>
         </div>
-    </div>
+    </div>  
     
     <div role="shadowbox" hidden="false"
-	style="background-image: url(thumbs/imara_pride.jpg)"
-	onclick="showArtbox(this, 'imara_pride.PNG', 'Pride Icon: Imara')"
-	class="lined commissions original_art"
-	caption="pride icon gift to my friend Icey! Her DnD character, Imara, a sweet, energetic, cleric."
-	>
-	<div class="overlay">
-		<h1>Pride Icon: Imara</h1>
-		<p>Jun 2020<p>
-	</div>
-</div>
+        style="background-image: url(thumbs/imara_pride.jpg)"
+        onclick="showArtbox(this, 'imara_pride.PNG', 'Pride Icon: Imara')"
+        class="lined commissions original_art"
+        caption="pride icon gift to my friend Icey! Her DnD character, Imara, a sweet, energetic, cleric."
+        >
+        <div class="overlay">
+            <h1>Pride Icon: Imara</h1>
+            <p>Jun 2020<p>
+        </div>
+    </div>
     
+    <!--  20 IMAGES  --> 
     
-<!--  24 IMAGES  -->    
+ <div role="shadowbox" hidden="false"
+        style="background-image: url(thumbs/sing_with_me.jpg)"
+        onclick="showArtbox(this, 'sing_with_me.PNG', 'Sing With Me, One Last Time')"
+        class="fanart Fire_Emblem lined paintings 4x6_prints"
+        caption="Painted this on a plane/bus trip to New York! Fates may not be my favorite FE game, but Azura is one of my favorite FE characters <3"
+        >
+        <div class="overlay">
+            <h1>Sing With Me, One Last Time</h1>
+            <p>May 2019<p>
+        </div>
+    </div>
+
+  
     <div role="shadowbox" hidden="false"
         style="background-image: url(thumbs/door_to_light.jpg)"
         onclick="showArtbox(this, 'door_to_light.PNG', 'Door to Light')"
-        class="original_art paintings traditional_art 4x6_prints "
+        class="original_art paintings traditional_art 4x6_prints"
         caption="Probably the oldest thing in my portfolio that I don't want to incinerate on sight. A painting I did way back in the middle of senior year of high school. Acrylic on multimedia paper, with additional digital touchups. 9x12 original size. Unfortunately because of this original size limitation I'm unable to print 11x17 posters of these even with high demand :( Might print 8.5x11 posters someday?"
         >
         <div class="overlay">
@@ -425,24 +405,25 @@
 	</div>
 </div>
     
-<div role="shadowbox" hidden="false"
-	style="background-image: url(thumbs/shaymin_chibi.PNG)"
-	onclick="showArtbox(this, 'shaymin_chibi.PNG', 'Shaymin Chibi')"
-	class="chibi lined fanart Pokemon stickers charms"
-	caption="Is it really a chibi if it's all head"
-	>
-	<div class="overlay">
-		<h1>Shaymin Chibi</h1>
-		<p>Nov 2019<p>
-	</div>
-</div>
+<!--  24 IMAGES  -->  
 
     
 <!-- Hidden From Here -- REMOVE DIV HIDDEN-->
 <div role="shadowbox" hidden="true"
+        style="background-image: url(thumbs/stardust.jpg)"
+        onclick="showArtbox(this, 'stardust.PNG', 'Stardust')"
+        class="paintings original_art"
+        caption="A background I speedpainted for a design class. Available as a wallpaper download, check the downloads section of my portfolio!"
+        >
+        <div class="overlay">
+            <h1>Stardust</h1>
+            <p>Apr 2020<p>
+        </div>
+    </div>
+<div role="shadowbox" hidden="true"
 	style="background-image: url(thumbs/val_render.PNG)"
 	onclick="showArtbox(this, 'val_render.PNG', 'Val render')"
-	class="commissions renders "
+	class="commissions renders"
 	caption="Commission from Alestrius on Flight Rising. "
 	>
 	<div class="overlay">
@@ -498,6 +479,18 @@
 		<p>Jul. 2020<p>
 	</div>
 </div>
+    
+  <div role="shadowbox" hidden="true"
+        style="background-image: url(thumbs/wangxian_bunnies.jpg)"
+        onclick="showArtbox(this, 'wangxian_bunnies.PNG', 'Wangxian Bunnies')"
+        class="fanart MXTX sketches stickers charms"
+        caption="Yes, these bunnies are available as separate charms but... DO NOT SEPARATE. "
+        >
+        <div class="overlay">
+            <h1>Wangxian Bunnies</h1>
+            <p>Jan 2020<p>
+        </div>
+    </div>
 
 <div role="shadowbox" hidden="true"
 	style="background-image: url(thumbs/mimi_sketch.jpg)"
@@ -560,7 +553,17 @@
 	</div>
 </div>  
     
-
+<div role="shadowbox" hidden="true"
+	style="background-image: url(thumbs/shaymin_chibi.PNG)"
+	onclick="showArtbox(this, 'shaymin_chibi.PNG', 'Shaymin Chibi')"
+	class="chibi lined fanart Pokemon stickers charms"
+	caption="Is it really a chibi if it's all head"
+	>
+	<div class="overlay">
+		<h1>Shaymin Chibi</h1>
+		<p>Nov 2019<p>
+	</div>
+</div>
     
 <!--    -   -   -   -   -   -   -   -   -  -   -   -   -   -   -   -   V - 2019 - V -  -   -   -   -   -   -   -   -   -   -   -   -->
 
@@ -741,6 +744,16 @@
     </div>
 
 <div role="shadowbox" hidden="true"
+         style="background-image: url(thumbs/Moonlit_walk.jpg)"
+         onclick="showArtbox(this, 'Moonlit_walk.PNG', 'Moonlit Walk')" 
+         class="fanart Pokemon commissions original_art paintings 4x6_prints"
+         caption="A gift to a longtime watcher! Her OC, Lilliana, a ninetales/zoroark/umbreon mix.">
+        <div class="overlay">
+            <h1>Moonlit Walk</h1>
+            <p>Nov. 2019</p>
+        </div>
+    </div>
+<div role="shadowbox" hidden="true"
      style="background-image: url(thumbs/light_within_the_storm.jpg)"   
      onclick="showArtbox(this, 'light_within_the_storm.PNG', 'Light Within the Storm')" 
      class="character_design original_art renders paintings 4x6_prints"
@@ -871,7 +884,7 @@
 <div role="shadowbox" hidden="true"
 	style="background-image: url(thumbs/giwira_render.PNG)"
 	onclick="showArtbox(this, 'giwira_render.PNG', 'Giwira Render')"
-	class="fanart original_art character_design renders stickers "
+	class="fanart original_art character_design renders stickers"
 	caption="Gilded Serpent, Giwira. OC serperior and probably the first OC pokemon I've ever designed. She's gone through a lot of revisions over the years, but I think (I hope?) I'll settle with this for now. Alina's prized pokemon. "
 	>
 	<div class="overlay">
@@ -921,7 +934,7 @@
 <div role="shadowbox" hidden="true"
 	style="background-image: url(thumbs/mindscape.jpg)"
 	onclick="showArtbox(this, 'mindscape.PNG', 'Mindscape')"
-	class="traditional_art inktober original_art "
+	class="traditional_art inktober original_art"
 	caption="Inktober 2018. I was pretty depressed when I drew this. "
 	>
 	<div class="overlay">

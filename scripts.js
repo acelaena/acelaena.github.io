@@ -94,3 +94,22 @@ function toggleTag(ele) {
     toggleImages(tag, status);
 }
 
+function showAll(btn) {
+    var i, item;
+    if (document.getElementById("gallery").getAttribute("initial") === "true") {
+        document.getElementById("gallery").setAttribute("initial", "false");
+    }
+    
+    var inactiveTag = document.querySelectorAll('[active="false"]');
+    for (i = 0; i < inactiveTag.length; i++) {
+            item = inactiveTag[i];
+            item.setAttribute("active", "true");
+        }
+    btn.setAttribute("active", "false");
+   
+    var viewable = document.querySelectorAll('[hidden="true"]');
+    for (i = 0; i < viewable.length; i++) {
+            item = viewable[i];
+            item.setAttribute("hidden", "false");
+        }
+}
