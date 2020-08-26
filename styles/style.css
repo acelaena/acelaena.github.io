@@ -138,11 +138,13 @@ div.polaroid-tab {
 
 #request {
     height: 50px;
+    width: 280px;
     margin: 8px;
     float: left;
-    font-size: 4px;
+    font-size: 12px;
     line-height: 1;
     padding: 0 20px;
+    word-wrap: break-word;
 }
 
 
@@ -178,6 +180,8 @@ div.polaroid-tab {
     #request {
         height: 40px;
         font-size: 14.4px;
+        width:auto;
+
     }
 
 }
