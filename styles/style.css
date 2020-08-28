@@ -114,6 +114,8 @@ div.polaroid {
     border-radius: 10px;
     margin-top: 4vh;
     margin-bottom: 2vh;
+    height: 500px;
+
 }
 
 div.polaroid-tab {
@@ -161,6 +163,8 @@ div.polaroid-tab {
     padding: 10px 20px;
     word-wrap: break-word;
     text-decoration: none;
+    text-align: center;
+
 }
 
 
@@ -182,7 +186,7 @@ div.polaroid-tab {
 
     
     /* Commissions Page */
-    div.polaroid { flex: 32%; max-width: 300px; margin: 10px;}
+    div.polaroid { flex: 32%; max-width: 300px; margin: 10px; height: 400px;}
     div.polaroid-tab {padding: 5% 10%;}
     .infobox {padding: 35pt 40pt 75pt;}
     
