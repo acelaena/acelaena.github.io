@@ -25,7 +25,7 @@
 </head>
 
 
-<body>
+<body onload="checkHash()">
 <!--POPUP BOX -->
 <div id="background">
     <div class="artbox">
@@ -59,45 +59,46 @@
 </header>
 <!--END HEADER -->
 
-<div class="container" style="padding: 0 1vw">
+<!-- container start -->
+<div class="container" style="padding: 0 1vw; min-height: calc(100vh - 179px);">
     
-<!--TAG BAR-->
-    
+<!--TAG BAR--> 
 <div class="gallery" style="justify-content: flex-start; padding-top: 50px;">
     
     <p style="width: 100%; text-indent: 80px; color: #666; margin-bottom: 6px;">Filter by tags: </p>
-    <button class="tag" active="false" onclick="toggleTag(this)">#fanart</button> 
-    <button class="tag" active="false" onclick="toggleTag(this)">#original_art</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#sketches</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#renders</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#lined</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#paintings</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#chibi</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#commissions</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#character_design</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#MXTX</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#Fire_Emblem</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#Fate_Grand_Order</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#Pokemon</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#Kingdom_Hearts</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#Dragalia_Lost</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#Arknights</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#Promare</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#11x17_prints</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#4x6_prints</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#charms</button>
-    <button class="tag" active="false" onclick="toggleTag(this)">#stickers</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#fanart">#fanart</button> 
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#original_art">#original_art</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#sketches">#sketches</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#renders">#renders</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#lined">#lined</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#paintings">#paintings</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#chibi">#chibi</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#commissions">#commissions</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#character_design">#character_design</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#MXTX">#MXTX</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#Fire_Emblem">#Fire_Emblem</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#Fate_Grand_Order">#Fate_Grand_Order</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#Pokemon">#Pokemon</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#Kingdom_Hearts">#Kingdom_Hearts</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#Dragalia_Lost">#Dragalia_Lost</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#Arknights">#Arknights</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#Promare">#Promare</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#poster_prints">#poster_prints</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#postcard_prints">#postcard_prints</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#charms">#charms</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#stickers">#stickers</button>
     <button class="tag" active="false" onclick="showAll(this)"> <b>[Show All]</b></button> 
  
 </div>
 <!--END TAG BAR-->
 
+<!-- gallery start -->
 <div class="gallery" id="gallery" initial="true">
-    
+
     <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/hua_mulan.jpg)" 
          onclick="showArtbox(this, 'hua_mulan.PNG', 'Hua Mulan')" 
-         class="fanart paintings character_design 11x17_prints 4x6_prints"
+         class="fanart paintings character_design poster_prints postcard_prints"
          caption="One of my favorite disney princesses! Here's my take on Hua Mulan, or better known to me as one of China's most famed warriors in folklore. I decided to go with an outfit style that's more accurate to ancient Chinese robes, but unfortunately 'era accurate' doesn't exist since nobody's sure when she actually lived (or when she lived at all)."
          >
         <div class="overlay">
@@ -109,7 +110,7 @@
     <div role="shadowbox" hidden="false"
         style="background-image: url(thumbs/child_of_the_wood.jpg)"
         onclick="showArtbox(this, 'child_of_the_wood.PNG', 'Child of the Wood')"
-        class="original_art paintings character_design 4x6_prints"
+        class="original_art paintings character_design postcard_prints poster_prints"
         caption="Another slight(?) redesign of Lenn. Here's him wearing part of the Aura Guardian uniform(just the coat!). I actually drew this as a self-indulgent wallet phone case for myself, shame the print didn't come out as detailed as I made the art."
         >
         <div class="overlay">
@@ -122,7 +123,7 @@
     <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/heart_amongst_the_stars.jpg)"
          onclick="showArtbox(this, 'heart_amongst_the_stars.PNG', 'a heart amongst the stars')" 
-         class="original_art paintings character_design 11x17_prints 4x6_prints"
+         class="original_art paintings character_design poster_prints postcard_prints"
          caption="A tribute to Qinni. She's one of my earliest influencers and among my favorite artists from deviantart. Regretfully when I left dA for a few years I lost track of her, and kind of forgot she existed until I heard the awful news. Rest among the stars, you wonderfully amazing artist."
          >
         <div class="overlay">
@@ -134,7 +135,7 @@
     <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/by_morning_light.jpg)"
          onclick="showArtbox(this, 'by_morning_light.PNG', 'By Morning Light')" 
-         class="original_art paintings character_design 11x17_prints 4x6_prints"
+         class="original_art paintings character_design poster_prints postcard_prints"
          caption="Uhh nothing much to say about this other than it was a background exercise that got a little too far when I decided to visit my old art teacher and she told me my backgrounds needed work. As for what this piece is about, it's a little bit of a time twist-- it's an older, slight redesign of Alina here, but the scenery is the Silverfall Highlands, before it fell to the void."
          >
         <div class="overlay">
@@ -148,7 +149,7 @@
     <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/fates_intertwined.jpg)"
          onclick="showArtbox(this, 'fates_intertwined.PNG', 'Fates Intertwined')" 
-         class="fanart paintings 11x17_prints 4x6_prints Fire_Emblem"
+         class="fanart paintings poster_prints postcard_prints Fire_Emblem"
          caption="Chrom and Robin, still one of my favorite ships of Fire Emblem history. I struggled a lot with this piece; I have a constant desire to make the colors brighter but bright colors certainly don't suit a battle to save the world."
          >
         <div class="overlay">
@@ -161,7 +162,7 @@
     <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/Yuri.jpg)"
          onclick="showArtbox(this, 'Yuri.PNG', 'Yuri Leclerc')" 
-         class="fanart Fire_Emblem sketches character_design 4x6_prints"
+         class="fanart Fire_Emblem sketches character_design postcard_prints"
          caption="I love this man way too much."
          >
         <div class="overlay">
@@ -211,7 +212,7 @@
     <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/Shinobu_kocho.jpg)"
          onclick="showArtbox(this, 'Shinobu_kocho.PNG', 'Shinobu Kocho')" 
-         class="fanart paintings 4x6_prints"
+         class="fanart paintings postcard_prints poster_prints"
          caption="One of my favorite characters from Demon Slayer/Kimetsu no Yaiba! I love her graceful movements and soft colors, but her hair and eyes were a real pain to draw.">
         <div class="overlay">
             <h1>Shinobu Kocho</h1>
@@ -224,7 +225,7 @@
     <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/through_the_generations.jpg)" 
          onclick="showArtbox(this, 'through_the_generations.PNG', 'Through the Generations')" 
-         class="fanart Kingdom_Hearts paintings 11x17_prints 4x6_prints"
+         class="fanart Kingdom_Hearts paintings poster_prints postcard_prints"
          caption="A memorial of the past, present, and future of Kingdom Hearts.">
         <div class="overlay">
             <h1>Through the Generations</h1>
@@ -236,7 +237,7 @@
     <div role="shadowbox" hidden="false"
         style="background-image: url(thumbs/fotia.jpg)"
         onclick="showArtbox(this, 'fotia.PNG', '[F O T I A]')"
-        class="fanart paintings Promare 11x17_prints 4x6_prints"
+        class="fanart paintings Promare poster_prints postcard_prints"
         caption="Lio Fotia. of course ace immediately went nuts over another twink"
         >
         <div class="overlay">
@@ -262,7 +263,7 @@
     <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/drunken_dream.jpg)"
          onclick="showArtbox(this, 'drunken_dream.PNG', 'Drunken Dream of the Past')" 
-         class="fanart MXTX 11x17_prints paintings lined 4x6_prints"
+         class="fanart MXTX poster_prints paintings lined postcard_prints"
          caption="Two of my favorite disaster gays! This is sort of a 'what if' piece-- what if Yiling Laozu!Wei Wuxian went with Lan Wangji to Gusu? It's a bit of a blend of their younger and older looks."
          >
         <div class="overlay">
@@ -273,12 +274,10 @@
     
     
     
- 
-    
     <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/breaking_sky.jpg)"
          onclick="showArtbox(this, 'breaking_sky.PNG', 'Breaking Sky')" 
-         class="Original Art paintings Character_Design renders 4x6 prints Pokemon"
+         class="Original Art paintings Character_Design renders postcard_prints Pokemon"
          caption="A pretty spoiler-y art of Project Shrouded Kingdom for me to be posting but I'm proud of the (character) art nonetheless. This actually took me nine months, because I couldn't settle on a background I liked, and I still don't quite like the background right now. This art is something of a transitional phase of when I was just starting to try my painted style, while still trying to stick to my old hyper-sharp rendered style.">
         <div class="overlay">
             <h1>Breaking Sky</h1>
@@ -357,7 +356,7 @@
  <div role="shadowbox" hidden="false"
         style="background-image: url(thumbs/sing_with_me.jpg)"
         onclick="showArtbox(this, 'sing_with_me.PNG', 'Sing With Me, One Last Time')"
-        class="fanart Fire_Emblem lined paintings 4x6_prints"
+        class="fanart Fire_Emblem lined paintings postcard_prints"
         caption="Painted this on a plane/bus trip to New York! Fates may not be my favorite FE game, but Azura is one of my favorite FE characters <3"
         >
         <div class="overlay">
@@ -370,8 +369,8 @@
     <div role="shadowbox" hidden="false"
         style="background-image: url(thumbs/door_to_light.jpg)"
         onclick="showArtbox(this, 'door_to_light.PNG', 'Door to Light')"
-        class="original_art paintings traditional_art 4x6_prints"
-        caption="Probably the oldest thing in my portfolio that I don't want to incinerate on sight. A painting I did way back in the middle of senior year of high school. Acrylic on multimedia paper, with additional digital touchups. 9x12 original size. Unfortunately because of this original size limitation I'm unable to print 11x17 posters of these even with high demand :( Might print 8.5x11 posters someday?"
+        class="original_art paintings traditional_art postcard_prints poster_prints"
+        caption="Probably the oldest thing in my portfolio that I don't want to incinerate on sight. A painting I did way back in the middle of senior year of high school. Acrylic on multimedia paper, with additional digital touchups. 9x12 original size."
         >
         <div class="overlay">
             <h1>Door to Light</h1>
@@ -383,7 +382,7 @@
     <div role="shadowbox" hidden="false"
          style="background-image: url(thumbs/verdant_tempest.jpg)"
          onclick="showArtbox(this, 'verdant_tempest.PNG', 'Verdant Tempest')" 
-         class="fanart Pokemon paintings 11x17_prints 4x6_prints"
+         class="fanart Pokemon paintings poster_prints postcard_prints"
          caption="Morally obligated to make at least one serperior print for Artists Alley, even though I know it won't sell as well as most. It's a nod to the username I held on Deviantart for seven years, grasssnake485, for my favorite pokemon.">
         <div class="overlay">
             <h1>Verdant Tempest</h1>
@@ -394,7 +393,7 @@
     <div role="shadowbox" hidden="false"
 	style="background-image: url(thumbs/nightshade_sentinel.jpg)"
 	onclick="showArtbox(this, 'nightshade_sentinel.PNG', 'The Nightshade Sentiel')"
-	class="paintings renders original_art character_design 4x6_prints"
+	class="paintings renders original_art character_design postcard_prints"
 	caption="Kamui Ryuunosuke, one of the characters in Shrouded Kingdom. He's my personal favorite character, though less so on drawing him."
 	>
 	<div class="overlay">
@@ -410,7 +409,7 @@
 <div role="shadowbox" hidden="true"
         style="background-image: url(thumbs/stardust.jpg)"
         onclick="showArtbox(this, 'stardust.PNG', 'Stardust')"
-        class="paintings original_art"
+        class="paintings original_art poster_prints postcard_prints"
         caption="A background I speedpainted for a design class. Available as a wallpaper download, check the downloads section of my portfolio!"
         >
         <div class="overlay">
@@ -744,7 +743,7 @@
 <div role="shadowbox" hidden="true"
          style="background-image: url(thumbs/Moonlit_walk.jpg)"
          onclick="showArtbox(this, 'Moonlit_walk.PNG', 'Moonlit Walk')" 
-         class="fanart Pokemon commissions original_art paintings 4x6_prints"
+         class="fanart Pokemon commissions original_art paintings postcard_prints"
          caption="A gift to a longtime watcher! Her OC, Lilliana, a ninetales/zoroark/umbreon mix.">
         <div class="overlay">
             <h1>Moonlit Walk</h1>
@@ -754,7 +753,7 @@
 <div role="shadowbox" hidden="true"
      style="background-image: url(thumbs/light_within_the_storm.jpg)"   
      onclick="showArtbox(this, 'light_within_the_storm.PNG', 'Light Within the Storm')" 
-     class="character_design original_art renders paintings 4x6_prints"
+     class="character_design original_art renders paintings postcard_prints"
      caption="Another piece I was never really quite satisfied with; at first I was really proud of the character rendering but not with the background, then months later when I revisited it I noticed a lot of things that went not quite right with the shading. Went back and fixed that and the background, but now I don't quite like the new background. ">
         <div class="overlay">
             <h1>Light Within the Storm</h1>
@@ -953,12 +952,13 @@
     </div>
 </div>
 
-    
-</div> <!-- gallery end -->
-</div> <!-- container end -->
+</div> 
+<!-- gallery end -->    
+</div> 
+<!-- container end -->
 <!--scripts -->
 
-<footer>
+<footer style="margin-top: 2px;">
 ©2020 Acelaena. | Site designed and coded by Acelaena. | Contact: <a href="mailto:gildedserpentdesigns+info@gmail.com">Email</a>
 </footer>
 

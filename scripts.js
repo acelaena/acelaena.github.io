@@ -98,6 +98,7 @@ function showAll(btn) {
     var i, item;
     if (document.getElementById("gallery").getAttribute("initial") === "true") {
         document.getElementById("gallery").setAttribute("initial", "false");
+
     }
     
     var inactiveTag = document.querySelectorAll('[active="false"]');
@@ -112,4 +113,18 @@ function showAll(btn) {
             item = viewable[i];
             item.setAttribute("hidden", "false");
         }
+}
+
+function checkHash(){
+    
+    var hashTag = window.location.hash;
+    
+    if (hashTag == null){ //If no anchor, do nothing
+        return;
+    }
+    else { //if anchor exists, activate tag
+        var ele = document.getElementById(hashTag);
+        toggleTag(ele);
+    }
+
 }
