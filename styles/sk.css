@@ -1,0 +1,46 @@
+div.charWidget {
+    max-width: 650px;
+    width: 40vw;
+    flex: 50%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px 0 #0003, 0 6px 10px 0 #0003;
+    border-radius: 10px;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    height: 450px;
+
+}
+
+
+.charWidget img.avatar{
+	border-top-left-radius: 10px;
+    width: 450px;
+    height: 450px;
+}
+
+.charWidget img.thumb{
+	border-top-left-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.charWidget .thumbBar {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    display:flex;
+}
+
+.charWidget .overlay {
+    
+}
+
+.charWidget h1 {
+
+}
+
+.charWidget p {
+
+}
