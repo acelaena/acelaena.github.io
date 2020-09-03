@@ -13,7 +13,7 @@ div.charWidget {
 }
 
 .charWidget a { position: absolute; bottom: 18px; right: 24px; }
-.charWidget h3 {font-size: 1.2em; margin: 2px 0 14px;}
+.charWidget h3 {font-size: 1.2em; margin: 2px 0 10px;}
 .charWidget p {font-size: 12px}
 
 .charWidget .contentTab {
