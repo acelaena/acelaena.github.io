@@ -128,18 +128,23 @@ function checkHash() {
 
 }
 
-//function openWidget(id) {
-//    var ele = document.getElementById(id);
-//    ele.style.height = "100%";
-//    ele.padding = "10% 8% 4%";
-//}
+function openWidget(id) {
+    var ele = document.getElementById(id);
+    ele.style.height = "100%";
+    ele.style.padding = "10% 8% 4%";
+    ele.style.opacity = "1";
+    ele.style.display = "block";
+    ele.style.zIndex = "5";
 
-//function closeWidget(id) {
-//    alert("closeWidget triggered");
-//    var ele = document.getElementById(id);
-//    ele.style.height = "0";
-//    ele.padding = "0";
-//}
+}
+
+function closeWidget(id) {
+    var ele = document.getElementById(id);
+    ele.style.height = "0";
+    ele.style.padding = "0";
+    ele.style.opacity = "0";
+    ele.style.zIndex = "-1";
+}
 
 function myFunction() {
   alert("closeWidget triggered");
