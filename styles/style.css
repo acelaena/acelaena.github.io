@@ -36,6 +36,10 @@ li {padding-bottom:14px;}
     min-height: calc(100vh - 227px);
 }
 
+.container.noflex {
+    display: block;
+}
+
 .column{width: 100%; flex: 90%;}
 .column-wide {width:100%;}
 .column-narrow {width:30%; flex:25%;}
