@@ -1,12 +1,12 @@
 div.charWidget {
     min-width: 280px;
-    width: 80vw;
-    height: 48vw;
+    min-height: 180px;
+    width: 70vw;
+    height: 110vw;
     background-color: #fff;
     box-shadow: 0 4px 6px 0 #0003, 0 6px 10px 0 #0003;
     border-radius: 10px;
     margin: 1.5vh;
-
     display: block;
     position: relative;
     z-index: 1;
@@ -24,8 +24,8 @@ div.charWidget {
 
 .charWidget img.avatar{
 	border-radius: 10px;
-    width: 48vw;
-    height: 48vw;
+    width: 70vw;
+    height: 70vw;
     min-width: 180px;
     min-height: 180px;
     flex-grow: 0;
@@ -83,6 +83,9 @@ div.charWidget {
     .charWidget .contentTab {
         height: calc(16vw - 40px);
         min-height: 260px;
+    }
+    .charWidget .overlay {
+        overflow: hidden;
     }
     
 }
