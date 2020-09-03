@@ -1,21 +1,45 @@
 div.charWidget {
     max-width: 650px;
-    width: 40vw;
-    flex: 50%;
+    min-width: 280px;
+    width: 24vw;
     background-color: #fff;
     box-shadow: 0 4px 6px 0 #0003, 0 6px 10px 0 #0003;
     border-radius: 10px;
-    margin-top: 4vh;
-    margin-bottom: 2vh;
-    height: 450px;
-
+    margin: 2vh;
+    min-height: 180px;
+    height: 16vw;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+.charWidget .contentTab {
+    padding: 10px;
+    width: 100%;
 }
 
+.charWidget a {
+/*
+    position: absolute;
+    bottom: 15px;
+    right: 22px;
+*/
+}
+
+a:active {
+    color: red;
+}
 
 .charWidget img.avatar{
 	border-top-left-radius: 10px;
-    width: 450px;
-    height: 450px;
+    border-bottom-left-radius: 10px;
+    width: 16vw;
+    min-width: 180px;
+    height: 16vw;
+    min-height: 180px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .charWidget img.thumb{
@@ -34,7 +58,18 @@ div.charWidget {
 }
 
 .charWidget .overlay {
-    
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+    background: #161616cc;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity: 1;
+    padding: 10% 8% 4%;
+    font-weight: 600;
+    box-sizing: border-box;
 }
 
 .charWidget h1 {

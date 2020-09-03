@@ -18,7 +18,8 @@ body{
 }
 
 /*All pages*/
-a {color: #18ab29}
+a {color: #18ab29; transition-duration: 0.3s;}
+a:hover {text-shadow:0px 1px 2px #44c767; cursor: pointer;}
 sub {line-height: 0; font-weight: 200}
 h1 {font-size: 32px;}
 p.body{text-indent: 2em; line-height: 1.45; margin-bottom: 1em;}

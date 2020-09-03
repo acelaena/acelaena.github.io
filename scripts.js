@@ -103,28 +103,45 @@ function showAll(btn) {
     
     var inactiveTag = document.querySelectorAll('[active="false"]');
     for (i = 0; i < inactiveTag.length; i++) {
-            item = inactiveTag[i];
-            item.setAttribute("active", "true");
-        }
+        item = inactiveTag[i];
+        item.setAttribute("active", "true");
+    }
     btn.setAttribute("active", "false");
    
     var viewable = document.querySelectorAll('[hidden="true"]');
     for (i = 0; i < viewable.length; i++) {
-            item = viewable[i];
-            item.setAttribute("hidden", "false");
-        }
+        item = viewable[i];
+        item.setAttribute("hidden", "false");
+    }
 }
 
-function checkHash(){
+function checkHash() {
     
     var hashTag = window.location.hash;
     
-    if (hashTag == null){ //If no anchor, do nothing
+    if (hashTag === null) { //If no anchor, do nothing
         return;
-    }
-    else { //if anchor exists, activate tag
+    } else { //if anchor exists, activate tag
         var ele = document.getElementById(hashTag);
         toggleTag(ele);
     }
 
 }
+
+//function openWidget(id) {
+//    var ele = document.getElementById(id);
+//    ele.style.height = "100%";
+//    ele.padding = "10% 8% 4%";
+//}
+
+//function closeWidget(id) {
+//    alert("closeWidget triggered");
+//    var ele = document.getElementById(id);
+//    ele.style.height = "0";
+//    ele.padding = "0";
+//}
+
+function myFunction() {
+  alert("closeWidget triggered");
+}
+
