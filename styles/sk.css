@@ -13,8 +13,8 @@ div.charWidget {
 }
 
 .charWidget a { position: absolute; bottom: 18px; right: 24px; }
-.charWidget h3 {font-size: 1.4em; margin: 10px 0 20px;}
-.charWidget p {font-size: 14px}
+.charWidget h3 {font-size: 1.2em; margin: 2px 0 14px;}
+.charWidget p {font-size: 12px}
 
 .charWidget .contentTab {
     padding: 10px;
@@ -70,6 +70,7 @@ div.charWidget {
         height: 16vw;
 
     }
+    .charWidget h3 {font-size: 1.4em; margin: 10px 0 20px;}
     .charWidget p {font-size: inherit;}
     .charWidget img.avatar {
         min-height: 300px;
