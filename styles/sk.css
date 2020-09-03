@@ -10,6 +10,7 @@ div.charWidget {
     display: block;
     position: relative;
     z-index: 1;
+    max-width: 70vw;
 }
 
 .charWidget a { position: absolute; bottom: 18px; right: 24px; }
@@ -26,10 +27,7 @@ div.charWidget {
 	border-radius: 10px;
     width: 70vw;
     height: 70vw;
-    min-width: 180px;
-    min-height: 180px;
-    flex-grow: 0;
-    flex-shrink: 0;
+    
 }
 
 .charWidget img.thumb{
