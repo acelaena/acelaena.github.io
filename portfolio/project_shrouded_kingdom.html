@@ -4,20 +4,12 @@
 
 <link rel="stylesheet" href="../styles/style.css">
 <link rel="stylesheet" href="../styles/header.css">
+<link rel="stylesheet" href="../styles/sk.css">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176116249-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-176116249-1');
-</script>
-    
 
 <title>Shrouded Kingdom - Acelaena Art</title>
 </head>
@@ -39,7 +31,7 @@
 </div>
 
 
-<div class="container" style="justify-content: flex-start">
+<div class="container" >
 <div class="column-wide" style="padding: 0 10vw;"><h1 style="letter-spacing: 4px; text-align: center">Project: Shrouded Kingdom</h1><br>
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;Whew, where do I start talking about this? The Shrouded Kingdom is a comic/story/game that I've been working on and off in various formats since 2013. Mostly because I can't decide on one singular format to stick to. Originally, it was intended to be a Fire Emblem/Pokemon crossover, akin to Pokemon Warriors, but I've been considering revamping the entire thing to (possibly) an original novel or webcomic.
@@ -48,44 +40,81 @@
 
 <h3 style="letter-spacing: 4px; text-align: center"><b>Characters</b></h3>
 </div>
-        <div class="column-narrow" style="max-width: 300px;">
-        <img src="../portfolio/thumbs/Lenn_sketch.jpg" style="width: 100%; ">
-        </div>
-        <div class="column" style="flex:50%; padding-left: 5%">
-
-
-        <h3 style="text-align: center">Lenn</h3>
-        <p>
-        Age: Unknown | Gender: Fluid | Height: 5'11" | Blood type: A <br>
-
-        <br>&nbsp;&nbsp;&nbsp;&nbsp; A genderfluid former assassin also known as Nightshade. Despite his hardened exterior and unsavory occupation, he cares deeply for the state of kingdom, especially for the little people less fortunate than him. Usually presents male but can be occasionally seen in a more feminine look. 
-        </p>
-
-
-        </div>
+    <div class="charWidget">
         
-        <div class="column-wide"><br></div>
-
-        <div class="column-narrow" style="max-width: 300px;">
-        <img src="../images/kamui.png" style="width: 100%;">
+         <img class="avatar" src="../images/lined.PNG" align=left> 
+        <div class="contentTab">
+            <h3>Lenn</h3>
+            <p>
+                Age: Unknown <br> 
+                Gender: Fluid <br> 
+                Height: 5'11" <br>
+                Blood type: A <br>
+                Aura: Unknown <br>
+                Clan: Titanius (claimed)<br>
+            </p>   
+            <a onclick="openWidget('lenn')">more»</a>
         </div>
-        <div class="column" style="flex:50%; padding-left: 5%">
-
-
-        <h3 style="text-align: center">Kamui Ryuunosuke</h3>
-        <p>
-        Age: 22 | Gender: Male | Height: 6'1" | Blood type: AB <br>
-
-        <br>&nbsp;&nbsp;&nbsp;&nbsp; A lancer from a clan known for its warriors. A pacifist at heart, and far, far too trusting for his own good. As the eldest of three siblings, one extremely timid and the other an obnoxious little shithole, he's far more mature than his years and is often the voice of reason among his friends. 
-        </p>
-
-
+        <div class="overlay" id="lenn">
+            <p class="body">  A former assassin also known as Nightshade. Despite his hardened exterior and unsavory occupation, he cares deeply for the state of kingdom, especially for the little people less fortunate than him. Highly chaotic. His natural hair color is brown, but due to certain events it has been permanently altered to a shimmery blue.
+            
+            
+            <a onclick="closeWidget('lenn')"> close»</a>
         </div>
-</div>
+    </div>
+    <div class="charWidget">
+        <img class="avatar" src="../images/lined.PNG" align=left>
+        <div class="contentTab">
+            <h3>Kamui Ryuunosuke</h3>
+            <p>
+                Age: 22 <br> 
+                Gender: Male <br> 
+                Height: 6'2" <br>
+                Blood type: AB <br>
+                Aura: Nightshade <br>
+                Clan: Draukyrn<br>
+            </p>   
+            <a onclick="openWidget('kamui')">more»</a>
+        </div>
+        <div class="overlay" id="kamui">
+            <p class="body">  A lancer from a clan known for its warriors. A pacifist at heart, and far, far too trusting for his own good. As the eldest of three siblings, he's far more mature than his years and often the voice of reason for his friends. True lawful. Regardless of whatever is thrown in his way, there's a stalwart loyalty in him that never goes away.
+            
+            
+            <a onclick="closeWidget('kamui')"> close»</a>
+        </div>
+    </div> 
+    <div class="charWidget">
+        <img class="avatar" src="../images/lined.PNG" align=left>
+        <div class="contentTab">
+            <h3>Tsumiyuna Makoto</h3>
+            <p>
+                Age: 21 <br> 
+                Gender: Female <br> 
+                Height: 4'11" <br>
+                Blood type: A <br>
+                Aura: Phthalo <br>
+                Clan: Magi<br>
+            </p>   
+            <a onclick="openWidget('yuna')">more»</a>
+        </div>
+        <div class="overlay" id="yuna">
+            <p class="body">  The Aura Guardians' petite strategist. Much louder than her size, she's quite open, friendly, and carefree. Unbefitting of her position, she loves to play pranks on people. In battle, she shows a completely different side, becoming emotionless, ruthless, and cunning, always thinking many steps ahead of her enemies.
+            
+            
+            <a onclick="closeWidget('yuna')"> close»</a>
+        </div>
+    </div> 
     
+    
+</div> <!--End of container-->
 
 <footer>
 ©2020 Acelaena. | Site designed and coded by Acelaena. | Contact: <a href="mailto:gildedserpentdesigns+info@gmail.com">Email</a>
 </footer>
+
+    
+<script src="../scripts.js">
+
+</script>
 
 </body>

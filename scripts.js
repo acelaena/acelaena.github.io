@@ -31,7 +31,7 @@ function showArtbox(ele, art, title) {
     document.getElementById("background").style.display = "block";
     
     //Set artbox art
-    var url = "url('../portfolio/gallery/" + art + "')";
+    var url = "url('gallery/" + art + "')";
     document.getElementById("box").style.backgroundImage = url;
     
     //Set title 
@@ -116,7 +116,22 @@ function showAll(btn) {
 }
 
 function checkHash() {
+    var hashTag = window.location.hash;
     
+    if (hashTag === null) { //If no anchor, do nothing
+        return;
+    } else if (hashTag.startsWith("#~")) { //if starts with ~, is art and open art
+            var artTag = hashTag.replace("#~", "");
+            var ele = document.getElementById(artTag);
+            ele.click();
+        } else { //if is tag, activate tag
+            var ele = document.getElementById(hashTag);
+            toggleTag(ele);
+        }
+
+}
+
+function parseHashTag() {
     var hashTag = window.location.hash;
     
     if (hashTag === null) { //If no anchor, do nothing
@@ -125,7 +140,6 @@ function checkHash() {
         var ele = document.getElementById(hashTag);
         toggleTag(ele);
     }
-
 }
 
 function openWidget(id) {
@@ -135,7 +149,6 @@ function openWidget(id) {
     ele.style.opacity = "1";
     ele.style.display = "block";
     ele.style.zIndex = "5";
-
 }
 
 function closeWidget(id) {
@@ -147,6 +160,6 @@ function closeWidget(id) {
 }
 
 function myFunction() {
-  alert("closeWidget triggered");
+  alert("function triggered");
 }
 
