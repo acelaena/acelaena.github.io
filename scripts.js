@@ -131,17 +131,7 @@ function checkHash() {
 
 }
 
-function parseHashTag() {
-    var hashTag = window.location.hash;
-    
-    if (hashTag === null) { //If no anchor, do nothing
-        return;
-    } else { //if anchor exists, activate tag
-        var ele = document.getElementById(hashTag);
-        toggleTag(ele);
-    }
-}
-
+/*SK page scripts*/
 function openWidget(id) {
     var ele = document.getElementById(id);
     ele.style.height = "100%";
