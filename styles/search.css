@@ -41,7 +41,7 @@ input:focus{
 }
 
 
-input.button {
+.submit {
     width: auto;
     border-radius: 10px;
     font-size: 10pt;
