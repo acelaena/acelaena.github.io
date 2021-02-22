@@ -52,7 +52,11 @@ function doSomething() {
                         class="${c[2]}"
                         date="${c[3]}"
                         id="${c[0]}"
-                        ></div>`;
+                        >
+                            <div class="overlay">
+                                <h1>${c[1]}</h1>
+                            </div>
+                        </div>`;
         html += template;
     }
     
@@ -182,4 +186,3 @@ function closeWidget(id) {
 function myFunction() {
   alert("function triggered");
 }
-

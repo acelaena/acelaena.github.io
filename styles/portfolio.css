@@ -28,9 +28,9 @@
     width: 100%;
     transition: .5s ease;
     opacity: 0.7;
-    padding: 10% 8% 4%;
+    padding: 8%;
 }
-.overlay h1{ font-size: 1.6em; font-weight: 600;}
+.overlay h1{ font-size: 1.2em; font-weight: 600;}
 [role=shadowbox]:hover {cursor: pointer}
 [role=shadowbox]:hover .overlay{opacity: 1;}
 
@@ -73,8 +73,9 @@
 }
 
 .art-content {
-    width:100vw;
-    height: 80vh;
+    width: 100vw;
+    height: 120vh;
+    max-height: 135vw;
     background-image: url(../portfolio/gallery/by_morning_light.PNG);
     background-size: contain;
     position: relative;
@@ -86,7 +87,7 @@
     background: #eee;
     color: #121212;
     width: 100vw;
-    padding: 25px 4vw 35px 3vw;
+    padding: 25px 10vw 35px 10vw;
     z-index:0;
     min-height: 20vh;
     
@@ -96,17 +97,23 @@
     font-size: 0.7em; 
     margin-bottom:8px;
 }
+#date{
+    color:#222; 
+    font-size: 1em; 
+    margin-bottom: 4px;
+    float: right;
+    margin-top: -1.5em;
+}
+#title {
+    font-size: 1.5em;   
+}
 
 /* Responsive layout - normal */
 @media (min-width: 600px) and (orientation: landscape){
      [role=shadowbox]{max-height: 500px; max-width: 500px; margin: 2px;}
     .overlay{opacity: 0;}
     .tag { font-weight: 400; font-size: .9em; padding: 8px;}
-
-
 }
-
-
 
 
 /* 2 col, 600-777px */
