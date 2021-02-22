@@ -61,6 +61,7 @@ function doSomething() {
     }
     
     document.getElementById("gallery").innerHTML = html;   
+    checkHash();
 }
 
 
