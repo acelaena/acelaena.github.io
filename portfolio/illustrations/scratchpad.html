@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="../../styles/style.css">
+<link rel="stylesheet" href="../../styles/header.css">
+<link rel="stylesheet" href="../../styles/portfolio.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176116249-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176116249-1');
+</script>
+    
+    
+<title>Gallery - Acelaena Art</title>
+</head>
+
+
+<body onload="checkHash()">
+<!--POPUP BOX -->
+<div id="background">
+    <div class="artbox">
+        <span class="close" onclick="closeArtbox()">&times;</span>
+            <div class="art-content" id="box"></div>
+        <div class="art-info">
+            <h1 id="title">Title</h1>
+            <p id="date" class="body"> desc</p> 
+            <p id="tags">#tags</p>
+        </div>
+    </div>
+  
+</div>
+<!--END POPUP -->
+
+<!--HEADER -->
+<header class="header">
+    <div class="left">
+        <h1> Acelaena Art</h1>
+        <p>Art and designs by Alina Xia</p>
+    </div>
+    
+    <div class="right">
+        <a href="../../" class="first">
+        About</a><a href="../" id="active" >
+        Portfolio</a><a href="../../commissions/">
+        Commission</a><a href="https://acelaenadesigns.bigcartel.com/">
+        Merch</a><a href="../../blog/" class="last">
+        Blog</a>
+    </div>    
+</header>
+<!--END HEADER -->
+
+<!-- container start -->
+<div class="container" style="padding: 0 1vw; min-height: calc(100vh - 179px);">
+    
+<!--TAG BAR--> 
+<div class="gallery" style="justify-content: flex-start; padding-top: 50px;">
+    
+    <p style="width: 100%; text-indent: 80px; color: #666; margin-bottom: 6px;">Filter by tags: </p>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#fanart">#fanart</button> 
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#original_art">#original_art</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#sketches">#sketches</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#renders">#renders</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#lined">#lined</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#paintings">#paintings</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#chibi">#chibi</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#commissions">#commissions</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#character_design">#character_design</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#MXTX">#MXTX</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#Fire_Emblem">#Fire_Emblem</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#Fate_Grand_Order">#Fate_Grand_Order</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#Pokemon">#Pokemon</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#Kingdom_Hearts">#Kingdom_Hearts</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#Dragalia_Lost">#Dragalia_Lost</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#Arknights">#Arknights</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#Promare">#Promare</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#poster_prints">#poster_prints</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#postcard_prints">#postcard_prints</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#charms">#charms</button>
+    <button class="tag" active="false" onclick="toggleTag(this)" id="#stickers">#stickers</button>
+    <button class="tag" active="false" onclick="showAll(this)"> <b>[Show All]</b></button> 
+ 
+</div>
+<!--END TAG BAR-->
+    <button onclick="doSomething()"> do something </button>
+    
+<!-- gallery start -->
+<div class="gallery" id="gallery" initial="true">
+</div>  
+<!-- gallery end -->    
+</div> 
+<!-- container end -->
+
+<!-- Data start -->
+<div id="csv" style="display: none;">
+Sword_of_the_Dragons, Sword of the Dragons, original_art paintings character_design poster_print postcard_prints, sept. 2020, false
+Evening_Party, A Mondstadt Party, fanart sketches Genshin_Impact postcard_prints, nov. 2020, false
+One_Last_Believer, One Last Believer, fanart paintings MXTX, oct. 2020, false
+Commission_Joywing_2, Commission: Joywing, original_art commissions lined, jan. 2021, false
+hua_mulan, Hua Mulan, fanart paintings character_design poster_prints postcard_prints, oct 2019, false
+child_of_the_wood, Child of the Wood, original_art paintings character_design postcard_prints poster_prints, may 2020, false
+heart_amongst_the_stars, a heart amongst the stars, original_art paintings character_design, feb 2020, false
+by_morning_light, By Morning Light, original_art paintings character_design poster_prints postcard_prints, feb 2020, false
+fates_intertwined,  Fates Intertwined, fanart paintings poster_prints postcard_prints Fire_Emblem, june 2020, false
+fotia, [FOTIA], fanart paintings poster_prints postcard_prints Promare, May 2020, false
+drunken_dream, Drunken Dream of the Past, fanart MXTX poster_prints paintings lined postcard_prints, june 2019, false
+through_the_generations, Through the Generations, fanart Kingdom_Hearts paintings poster_prints postcard_prints, oct 2019, true
+
+
+Shinobu_kocho, Shinobu Kocho, fanart paintings poster_prints postcard_prints, dec 2019, false
+Theodas, Theodas, Prince of the Seas, original_art paintings character_design, dec 2019, true
+nightshade_sentinel, The Nightshade Sentinel, original_art character_design paintings postcard_prints, jun 2019, true
+Axel_Xiulan_Wang, Axel \'Xiulan\' Wang, original_art paintings character_design Fate_Grand_Order, Dec. 2019, true
+BH_final, Beast Hunter Book Cover, original_art fanart paintings book_cover_design, nov 2019, true
+Yuri, Yuri Leclerc, fanart sketches character_design Fire_Emblem postcard_prints, feb 2020, true
+Ryuko, Ryuko Matoi, fanart paintings, sept. 2020, true
+breaking_sky, Breaking Sky, original_art paintings character_design renders postcard_prints Pokemon, Oct 2019, true
+
+
+blue, Blue Roses, original_art lined paintings, aug. 2020, true
+Gala_Sarisse_Remix, Gala Sarisse Remix, fanart character_design Dragalia_Lost commission lined, dec 2020, false
+DL_Lenn, Guardian Blade: Lenn, original_art character_design Dragalia_Lost lined charms stickers, feb 2020, false
+Dragalia_Black_Widow, Spider in the Night: Black Widow, fanart commissions lined, sept 2020, true
+rose_pride, Pride Icon: Rose, original_art commissions lined, jun 2020, true
+flare_pride, Pride Icon: Flare, original_art commissions lined, jun 2020, true
+lenn_pride, Pride Icon: Lenn, original_art character_design lined, jun 2020, true
+imara_pride, Pride Icon: Imara, original_art commissions lined, jun 2020, true
+
+</div>
+<!-- Data end -->    
+    
+
+
+
+
+<footer>
+©2020-2021 Acelaena. | Site designed and coded by Acelaena. | Contact: <a href="mailto:gildedserpentdesigns+info@gmail.com">Email</a>
+</footer>
+    
+<!--scripts -->
+<script src="../../scratch.js"></script>
+</body>
+</html>
