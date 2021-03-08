@@ -1,3 +1,14 @@
+:root {
+    --offWhite: #fcfcfc;    /* var(--offWhite)*/
+    --mintGreen: #cfeacf; /* var(--mintGreen)*/
+    --springGreen: #e8f6ce; /* var(--springGreen)*/
+    --vividGreen: #44c767; /* var(--vividGreen)*/
+    --mediumGreen: #18ab29; /* var(--mediumGreen)*/
+    --deepGreen: #0d8533; /* var(--deepGreen)*/
+    --shadowGray: #373a45cc; /* var(--shadowGray)*/
+    --offBlack: #111;
+}
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -12,14 +23,14 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: "Quicksand", "Open Sans", sans-serif;
-    background-color: #e8f6ce;
+    background-color: var(--springGreen);
     overflow-x: hidden;
     letter-spacing: 0.4px;
 }
 
 /*All pages*/
-a {color: #18ab29; transition-duration: 0.3s;}
-a:hover {text-shadow:0px 1px 2px #44c767; cursor: pointer;}
+a {color: var(--mediumGreen); transition-duration: 0.3s;}
+a:hover {text-shadow:0px 1px 2px var(--vividGreen); cursor: pointer;}
 sub {line-height: 0; font-weight: 200}
 h1 {font-size: 32px;}
 p.caption{text-indent: 1.2em; line-height: 1; margin-bottom: 1em;}
@@ -57,7 +68,7 @@ li {padding-bottom:14px;}
     cursor: pointer;
 }
 
-.close:hover, .close:focus { color: #000; }
+.close:hover, .close:focus { color: black; }
 
 footer{
     position: relative;
@@ -67,8 +78,8 @@ footer{
     text-align: center;
     font-size: 12px;
     border-top: solid 1px;
-    border-color: #18ab29;
-    background-color: #cfeacf;
+    border-color: var(--mediumGreen);
+    background-color: var(--mintGreen);
     margin-top: 50px;
 }
 
@@ -82,27 +93,27 @@ footer{
 /*Commissions page*/
 .button {
     display: inline-block;
-    background-color:#ffffff;
+    background-color: white;
     position: relative;
     border-radius: 100px;
-    border: 3px solid #18ab29;
+    border: 3px solid var(--mediumGreen);
     transition-duration: 0.2s;
-    color:#0d8533;
+    color: var(--deepGreen);
     padding: 16px;
     float: right;
     letter-spacing: 3px;
     font-family: inherit;
     font-weight: 500;
     font-size: 18px;
-    text-shadow:0px 1px 2px #44c767;
+    text-shadow:0px 1px 2px var(--vividGreen);
     line-height: 0;
     cursor: pointer;
 }
-.button:hover { background-color:#44c767; color: #fff; }
+.button:hover { background-color: var(--vividGreen); color: white; }
 .button:active { position:relative; top:1px; }
 
 #background {
-    background-color: #373a45cc;
+    background-color: var(--shadowGray);
     position: fixed;
     z-index: 2;
     height: 100vh;
@@ -115,7 +126,7 @@ div.polaroid {
     max-width: 400px;
     width: 80vw;
     flex:100%;
-    background-color: #fff;
+    background-color: white;
     box-shadow: 0 4px 6px 0 #0003, 0 6px 10px 0 #0003;
     border-radius: 10px;
     margin-top: 4vh;
@@ -138,7 +149,7 @@ div.polaroid-tab {
 }
 
 .infobox {
-    background-color: #fff;
+    background-color: white;
     z-index: 3;
     height: 90vh;
     width: 90vw;
