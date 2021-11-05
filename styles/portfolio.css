@@ -34,8 +34,8 @@
 [role=shadowbox]:hover {cursor: pointer}
 [role=shadowbox]:hover .overlay{opacity: 1;}
 
-[hidden=true] {display:none;}
-[hidden=false] {display: block;}
+[hidden=TRUE] {display:none;}
+[hidden=FALSE] {display:block;}
 
 /*TAGS*/
 .tag {
@@ -51,7 +51,7 @@
     font-weight: 600;
 }
 
-.tag:hover, .tag[active=true]{
+.tag:hover, .tag[active=TRUE]{
     background-color:#fff;
     color: #0d8533;
     text-shadow:0px 1px 1px #44c767;

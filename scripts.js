@@ -94,13 +94,13 @@ function showArtbox(ele, art, title) {
 /*Portfolio page tag script*/
 function toggleImages(t, show) {
     var item, i;
-    if (document.getElementById("gallery").getAttribute("initial") === "true") {
-        document.getElementById("gallery").setAttribute("initial", "false");
+    if (document.getElementById("gallery").getAttribute("initial") === "TRUE") {
+        document.getElementById("gallery").setAttribute("initial", "FALSE");
         
         //hide all
-        var viewable = document.querySelectorAll('[hidden="false"]');
+        var viewable = document.querySelectorAll('[hidden="FALSE"]');
         for (i = 0; i < viewable.length; i++) {
-            viewable[i].setAttribute("hidden", "true");
+            viewable[i].setAttribute("hidden", "TRUE");
         }
     }
     
@@ -108,11 +108,11 @@ function toggleImages(t, show) {
     var toToggle = document.getElementsByClassName(t);
     if (show) { //show
         for (i = 0; i < toToggle.length; i++) {
-            toToggle[i].setAttribute("hidden", "false");
+            toToggle[i].setAttribute("hidden", "FALSE");
         }
     } else { //hide
         for (i = 0; i < toToggle.length; i++) {
-            toToggle[i].setAttribute("hidden", "true");
+            toToggle[i].setAttribute("hidden", "TRUE");
         }
     }
     
@@ -120,11 +120,11 @@ function toggleImages(t, show) {
 
 function toggleTag(ele) {
     var status;
-    if (ele.getAttribute("active") === "false") {
-        ele.setAttribute("active", "true");
+    if (ele.getAttribute("active") === "FALSE") {
+        ele.setAttribute("active", "TRUE");
         status = true;
     } else {
-        ele.setAttribute("active", "false");
+        ele.setAttribute("active", "FALSE");
         status = false;
     }
     
@@ -136,17 +136,17 @@ function toggleTag(ele) {
 
 function showAll(btn) {
     var i, item;
-    document.getElementById("gallery").setAttribute("initial", "false");
+    document.getElementById("gallery").setAttribute("initial", "FALSE");
 
-    var inactiveTag = document.querySelectorAll('[active="false"]');
+    var inactiveTag = document.querySelectorAll('[active="FALSE"]');
     for (i = 0; i < inactiveTag.length; i++) {
-        inactiveTag[i].setAttribute("active", "true");
+        inactiveTag[i].setAttribute("active", "TRUE");
     }
-    btn.setAttribute("active", "false");
+    btn.setAttribute("active", "FALSE");
    
-    var viewable = document.querySelectorAll('[hidden="true"]');
+    var viewable = document.querySelectorAll('[hidden="TRUE"]');
     for (i = 0; i < viewable.length; i++) {
-        viewable[i].setAttribute("hidden", "false");
+        viewable[i].setAttribute("hidden", "FALSE");
     }
 }
 
