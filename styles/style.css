@@ -101,7 +101,7 @@ footer{
     color: var(--deepGreen);
     padding: 16px;
     float: right;
-    letter-spacing: 3px;
+    letter-spacing: 1.5px;
     font-family: inherit;
     font-weight: 500;
     font-size: 18px;
@@ -111,6 +111,47 @@ footer{
 }
 .button:hover { background-color: var(--vividGreen); color: white; }
 .button:active { position:relative; top:1px; }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: white;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -100px;
+    padding: 20px;
+    letter-spacing: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-shadow: none;
+    line-height: normal;
+    width: 200px;
+    
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 
 #background {
     background-color: var(--shadowGray);
@@ -139,6 +180,7 @@ div.polaroid-tab {
     text-align: left;
     border-radius: 10px;
     padding: 3% 7%;
+    line-height: 1.5;
 }
 
 .polaroid img{
@@ -203,9 +245,7 @@ ul {
 
 
 @media screen and (min-width: 600px) and (orientation: landscape) /* For Large Screens */
-{   
-    body{letter-spacing: 1px;}
-    
+{       
     /* two column spread */
     .column { 
         width: 46%;
@@ -219,7 +259,7 @@ ul {
 
     
     /* Commissions Page */
-    div.polaroid { flex: 32%; max-width: 300px; margin: 10px; height: 400px;}
+    div.polaroid { flex: 32%; max-width: 250px; margin: 10px; height: 375px;}
     div.polaroid-tab {padding: 5% 10%;}
     .infobox {padding: 35pt 40pt 75pt;}
     
