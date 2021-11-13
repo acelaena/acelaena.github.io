@@ -176,6 +176,10 @@ div.polaroid {
 
 }
 
+div.polaroid.large1 { height: 550px;}
+div.polaroid.large2 { height: 285px;}
+div.polaroid.smol { height: 140px;}
+
 div.polaroid-tab {
     text-align: left;
     border-radius: 10px;
@@ -260,8 +264,11 @@ ul {
     
     /* Commissions Page */
     div.polaroid { flex: 32%; max-width: 250px; margin: 10px; height: 375px;}
-    div.polaroid-tab {padding: 5% 10%;}
-    .infobox {padding: 35pt 40pt 75pt;}
+    div.polaroid.large1 { height: 465px;}
+    div.polaroid.large2 { height: 385px;}
+    div.polaroid.smol { height: 165px;}
+    div.polaroid-tab { padding: 5% 10%;}
+    .infobox { padding: 35pt 40pt 75pt;}
     
     .infobox img{
         width: 50%;
