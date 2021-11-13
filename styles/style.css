@@ -36,6 +36,7 @@ h1 {font-size: 32px;}
 p.caption{text-indent: 1.2em; line-height: 1; margin-bottom: 1em;}
 p.body{text-indent: 2em; line-height: 1.45; margin-bottom: 1em;}
 h2 {font-size: 18px; font-weight: 200; margin-bottom: 14px;}
+h2.title {font-size: 24px; font-weight: 600; margin-bottom: 14px; text-align: left;}
 h3 {font-size: 18px;font-weight: 600;margin: 10px;}
 li {padding-bottom:14px;}
 
