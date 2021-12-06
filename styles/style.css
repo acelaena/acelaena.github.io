@@ -41,7 +41,7 @@ h3 {font-size: 18px;font-weight: 600;margin: 10px;}
 li {padding-bottom:14px;}
 
 .container {
-    padding: 6vh 6vw;    
+    padding: 6vh 5vw;    
     display: flex;
     align-items: flex-start;
     flex-flow: row wrap;
