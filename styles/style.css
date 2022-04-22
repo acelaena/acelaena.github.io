@@ -22,7 +22,8 @@
 body{
     width: 100vw;
     height: 100vh;
-    font-family: "Quicksand", "Open Sans", sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: "Quicksand", "Open Sans", sans-serif;*/
     background-color: var(--springGreen);
     overflow-x: hidden;
     letter-spacing: 0.4px;
@@ -56,6 +57,7 @@ li {padding-bottom:14px;}
 .column{width: 100%; flex: 90%;}
 .column-wide {width:100%;}
 .column-narrow {width:30%; flex:25%;}
+.space{width: 100%; height: 10vh}
 
 .close {
     color: #aaa;
@@ -247,6 +249,7 @@ ul {
     font-size: 14px;
         
 }
+
 
 
 @media screen and (min-width: 600px) and (orientation: landscape) /* For Large Screens */
