@@ -249,6 +249,12 @@ ul {
     font-size: 14px;
         
 }
+.grow {
+transition: transform 1s;
+}
+.grow:hover{
+transform: scale(1.12);
+}
 
 
 
