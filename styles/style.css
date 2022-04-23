@@ -26,7 +26,7 @@ body{
     font-family: "Quicksand", "Open Sans", sans-serif;
     background-color: var(--springGreen);
     overflow-x: hidden;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.3px;
 }
 
 /*All pages*/
