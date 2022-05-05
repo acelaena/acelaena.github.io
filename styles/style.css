@@ -176,13 +176,12 @@ div.polaroid {
     border-radius: 10px;
     margin-top: 4vh;
     margin-bottom: 2vh;
-    height: 400px;
+/*    height: 400px;*/
 
 }
 
-div.polaroid.large1 { height: 480px;}
-div.polaroid.large2 { height: 315px;}
-div.polaroid.smol { height: 140px;}
+div.polaroid.teeny { height: 60px; width: 60vw; flex: none; margin-top: 2vh;}
+
 
 div.polaroid-tab {
     text-align: left;
@@ -274,10 +273,8 @@ transform: scale(1.12);
 
     
     /* Commissions Page */
-    div.polaroid { flex: 32%; max-width: 250px; margin: 10px; height: 375px;}
-    div.polaroid.large1 { height: 465px;}
-    div.polaroid.large2 { height: 385px;}
-    div.polaroid.smol { height: 165px;}
+    div.polaroid { flex: 32%; max-width: 250px; margin: 10px; }
+    div.polaroid.teeny { height: 60px; flex: 32%;}
     div.polaroid-tab { padding: 5% 10%;}
     .infobox { padding: 35pt 40pt 75pt;}
     
