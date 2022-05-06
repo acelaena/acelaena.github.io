@@ -43,6 +43,7 @@ h2.title {font-size: 24px; font-weight: 600; margin-bottom: 14px; text-align: le
 h3 {font-size: 18px;font-weight: 600;margin: 10px;}
 li {padding-bottom:14px;}
 
+
 .container {
     padding: 6vh 5vw;    
     display: flex;
@@ -258,6 +259,7 @@ transform: scale(1.12);
 }
 
 
+div.hide {display: none; flex:none;}
 
 @media screen and (min-width: 600px) and (orientation: landscape) /* For Large Screens */
 {       
