@@ -155,14 +155,17 @@ function checkHash() {
     
     if (hashTag === null) { //If no anchor, do nothing
         return;
-    } else if (hashTag.startsWith("#~")) { //if starts with ~, is art and open art
+    } else if (hashTag === "#all"){
+        showAll(document.getElementById("all"));
+    }    
+    else if (hashTag.startsWith("#~")) { //if starts with ~, is art and open art
             var artTag = hashTag.replace("#~", "");
             var ele = document.getElementById(artTag);
             ele.click();
-        } else { //if is tag, activate tag
-            var ele = document.getElementById(hashTag);
-            toggleTag(ele);
-        }
+    } else { //if is tag, activate tag
+        var ele = document.getElementById(hashTag);
+        toggleTag(ele);
+    }
 
 }
 
