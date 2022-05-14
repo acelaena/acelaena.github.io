@@ -8,16 +8,16 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300, 400, 500, 600, 700&display=swap" rel="stylesheet">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176116249-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  gtag('js',  new Date());
 
-  gtag('config', 'UA-176116249-1');
+  gtag('config',  'UA-176116249-1');
 </script>
     
     
@@ -69,20 +69,14 @@
     <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#original_art">#original_art</button>
     <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#sketches">#sketches</button>
     <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#renders">#renders</button>
-    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#lined">#lined</button>
-    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#paintings">#paintings</button>
-    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#chibi">#chibi</button>
+    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#rough_paint">#rough</button>
+    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#gloss_paint">#gloss_paint</button>
+    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#polish_paint">#polish_paint</button>
+    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#ink_paint">#ink_paint</button>
+    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#splash_art">#splash_art</button>
     <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#commissions">#commissions</button>
-    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#character_design">#character_design</button>
-    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#MXTX">#MXTX</button>
-    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#Fire_Emblem">#Fire_Emblem</button>
-    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#Fate_Grand_Order">#Fate_Grand_Order</button>
-    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#Pokemon">#Pokemon</button>
-    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#Kingdom_Hearts">#Kingdom_Hearts</button>
-    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#Dragalia_Lost">#Dragalia_Lost</button>
-    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#Arknights">#Arknights</button>
-    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#Promare">#Promare</button>
-    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#Genshin_Impact">#Genshin_Impact</button>
+    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#zines">#zines</button>
+    <button class="tag" active="FALSE" onclick="toggleTag(this)" id="#zines">#prints</button>
     <button class="tag" active="FALSE" onclick="showAll(this)" id="all"> <b>[Show All]</b></button> 
 </div>
 <!--END TAG BAR-->
@@ -95,59 +89,51 @@
 <!-- container end -->
 <!-- Data start -->
 <div id="csv" style="display: none;">
-Sword_of_the_Dragons, Sword of the Dragons, original_art paintings character_design poster_prints postcard_prints, Sep. 2020, FALSE
-One_Last_Believer, One Last Believer, fanart paintings MXTX, Oct. 2020, FALSE
-by_morning_light, By Morning Light, original_art paintings character_design poster_prints postcard_prints, Feb 2020, FALSE
-child_of_the_wood, Child of the Wood, original_art paintings character_design postcard_prints poster_prints, May 2020, FALSE
-Beast_Hunter, Beast Hunter, original_art fanart renders paintings, Sep 2020, FALSE
-fates_intertwined, Fates Intertwined, fanart paintings poster_prints postcard_prints Fire_Emblem, June 2020, FALSE
-Goddess_of_Love, Goddess of Love: Kama, fanart Fate_Grand_Order renders paintings poster_prints, June 2021, TRUE
-fotia, [FOTIA], fanart paintings poster_prints postcard_prints Promare, May 2020, FALSE
-Dragon_of_the_East_Wind, Dragon of the East Wind, original_art renders paintings commissions, June 2021, FALSE
-through_the_generations, Through the Generations, fanart Kingdom_Hearts paintings poster_prints postcard_prints, Oct 2019, TRUE
-Shinobu_kocho, Shinobu Kocho, fanart paintings poster_prints postcard_prints, Dec 2019, FALSE
-Mastermind, Mastermind, fanart Bungou_Stray_Dogs renders paintings, Nov 2021, FALSE
-nightshade_sentinel, The Nightshade Sentinel, original_art character_design paintings postcard_prints, Jun 2019, TRUE
-lappy, Lappland, fanart Arknights paintings poster_prints, Sep 2021, FALSE
-Sardonis, Paladin Sardonis, original_art renders paintings commissions, June 2021, TRUE
-Phoenix_of_Dusk, Phoenix of Dusk: Diluc, fanart Genshin_Impact renders paintings zines poster_prints, Nov 2021, TRUE
-drunken_dream, Drunken Dream of the Past, fanart MXTX poster_prints paintings lined postcard_prints, June 2019, FALSE
-Damian_and_Axel, Damian and Axel, original_art lined Dragalia_Lost commissions, Sep 2021, FALSE
-Gala_Sarisse_Remix, Gala Sarisse Remix, fanart character_design Dragalia_Lost commission lined, Dec 2020, FALSE
-DL_lenn, Guardian Blade: Lenn, original_art character_design Dragalia_Lost lined charms stickers, Feb 2020, FALSE
-Water_Guardian_Suresha, Water Guardian: Suresha, original_art lined Dragalia_Lost commissions, Sep 2021, TRUE
-Castle_Guard_Norwyn, Castle Guard: Norwyn, original_art commissions lined Dragalia_Lost, Sep 2021, FALSE
-Dragalia_Black_Widow, Spider in the Night: Black Widow, fanart commissions Dragalia_Lost lined, Sep 2020, TRUE
-rose_pride, Pride Icon: Rose, original_art commissions lined, Jun 2020, TRUE
-flare_pride, Pride Icon: Flare, original_art commissions lined, Jun 2020, TRUE
-lenn_pride, Pride Icon: Lenn, original_art character_design lined, Jun 2020, TRUE
-imara_pride, Pride Icon: Imara, original_art commissions lined, Jun 2020, TRUE
-blue, Blue Roses, original_art lined paintings, Aug. 2020, TRUE
-Icicle, Icicle, original_art renders paintings , July 2021, TRUE
-Axel_Xiulan_Wang, Axel 'Xiulan' Wang, original_art paintings character_design Fate_Grand_Order, Dec. 2019, TRUE
-Magicians_of_Saint_Glory, Magicians of Saint Glory, original_art renders paintings , Aug 2021, TRUE
-BH_final, Beast Hunter Book Cover, original_art fanart paintings book_cover_design, Nov 2019, TRUE
-Celestial_Sylias, Artfight: Celestial Sylias, original_art renders paintings , July 2021, TRUE
-door_to_light, Door to Light, original_art traditional_art paintings postcard_prints poster_prints, Dec 2017, TRUE
-verdant_tempest, Verdant Tempest, fanart Pokemon paintings poster_prints postcard_prints, May 2019, TRUE
-hua_mulan, Hua Mulan, fanart paintings character_design poster_prints postcard_prints, Oct 2019, TRUE
-stardust, Stardust, original_art paintings poster_prints postcard_prints, Apr 2020, TRUE
-heart_amongst_the_stars, a heart amongst the stars, original_art paintings character_design, Feb 2020, TRUE
-Moonlit_walk, Moonlit Walk, fanart Pokemon commissions original_art paintings , Nov 2019, TRUE
-breaking_sky, Breaking Sky, original_art paintings character_design renders postcard_prints Pokemon, Oct 2019, TRUE
-Ryuko, Ryuko Matoi, fanart paintings, Sep. 2020, TRUE
+Lenn_Arceus, Lenn and Arceus, original_art polish_paint prints, May 2022, FALSE
+King_Mordred, Mordred, fanart polish_paint zines prints, Aug 2021, TRUE
+Sword_of_the_Dragons, Sword of the Dragons, original_art polish_paint prints, Sep 2020, FALSE
+child_of_the_wood, Child of the Wood, original_art polish_paint prints, May 2020, FALSE
+by_morning_light, By Morning Light, original_art polish_paint prints, Feb 2020, FALSE
+fotia, [FOTIA], fanart polish_paint prints, May 2020, FALSE
+Goddess_of_Love, Goddess of Love: Kama, fanart polish_paint prints, Jun 2021, FALSE
+Damian_and_Axel, Damian and Axel, original_art commissions splash_art gem_paint, Sep 2021, FALSE
+Castle_Guard_Norwyn, Castle Guard: Norwyn, original_art commissions splash_art gloss_paint, Sep 2021, FALSE
+Water_Guardian_Suresha, Water Guardian: Suresha, original_art commissions splash_art gem_paint, Sep 2021, TRUE
+Gala_Sarisse_Remix, Gala Sarisse Remix, fanart commissions splash_art, Dec 2020, TRUE
+DL_lenn, Guardian Blade: Lenn, original_art splash_art gloss_paint, Feb 2020, FALSE
+Dragalia_Black_Widow, Spider in the Night: Black Widow, fanart commissions splash_art, Sep 2020, TRUE
+Nezha, Nezha, fanart zines prints ink_paint, Aug 2021, FALSE
+KNY, Tanjiro and Nezuko, fanart ink_paint prints, Oct 2021, FALSE
+KH3, The Destiny Trio, fanart ink_paint prints, Sep 2021, FALSE
+Baizhu_and_Serperior, Baizhu and Serperior, fanart gloss_paint prints, Dec 2021, TRUE
+Mastermind, Mastermind, fanart polish_paint prints, Nov 2021, TRUE
+Celestial_Sylias, Artfight: Celestial Sylias, original_art rough, Jul 2021, TRUE
+Dragon_of_the_East_Wind, Dragon of the East Wind, original_art polish_paint commissions, Jun 2021, TRUE
+Sardonis, Paladin Sardonis, original_art polish_paint commissions, Jun 2021, TRUE
+lappy, Lappland, fanart prints rough, Sep 2021, TRUE
+
+blue, Blue Roses, original_art ink_paint, Aug 2020, TRUE
+heart_amongst_the_stars, a heart amongst the stars, original_art polish_paint, Feb 2020, TRUE
+hua_mulan, Hua Mulan, fanart prints rough, Oct 2019, TRUE
+breaking_sky, Breaking Sky, original_art prints rough, Oct 2019, TRUE
+fates_intertwined, Fates Intertwined, fanart prints rough, Jun 2019, TRUE
+Magicians_of_Saint_Glory, Magicians of Saint Glory, original_art rough, Aug 2021, TRUE
+sunlight, Sunlight, original_art fanart sketches, Jul 2020, TRUE
 val_render, Val Render, commissions renders, May 2020, TRUE
-Ulric_and_talon_render, Ulric and Talon, commissions renders, Mar. 2020, TRUE
-lenn_render, Lenn Renders, original_art character_design Pokemon renders, Aug 2019, TRUE
-Heishi, Sand Adept: Heishi, original_art sketches commissions, Aug. 2021, TRUE
-Yuri, Yuri Leclerc, fanart sketches character_design Fire_Emblem, Feb 2020, TRUE
-wangxian_bunnies, Wangxian Bunnies, fanart sketches MXTX stickers charms, Jan 2020, TRUE
-Evening_Party, A Mondstadt Party, fanart sketches Genshin_Impact postcard_prints character_design, Nov. 2020, TRUE
-sunlight, Sunlight, original_art fanart sketches stickers character_design Pokemon, Jul 2020, TRUE
-shaymin_chibi, Shaymin Chibi, fanart chibi stickers lined Pokemon, Nov 2019, TRUE
+Ulric_and_talon_render, Ulric and Talon, commissions renders, Mar 2020, TRUE
+Evening_Party, A Mondstadt Party, fanart sketches prints, Nov 2020, TRUE
+mitsumi, Mitsumi and Chimchar, fanart sketches, Nov 2021, TRUE
+Zaun, Zaun colorless sketch, original_art commissions sketches, Jan 2022, TRUE
+
+
 </div>
 <!-- Data end -->    
-    
+<!-- Hidden data -->
+<div id="hiddencsv" style="display: none;">
+Morgan, Morgan LeFay, fanart polish_paint zines, Apr 2022, TRUE
+    Yurileth, A Dance Beneath the Starlight , fanart polish_paint zines prints, Nov 2021, TRUE
+
+    </div>
 
 
 
